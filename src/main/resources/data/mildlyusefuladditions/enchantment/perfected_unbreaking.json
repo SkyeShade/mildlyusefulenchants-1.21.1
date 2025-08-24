@@ -1,0 +1,76 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.perfected_unbreaking"
+  },
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 10.0,
+              "per_level_above_first": 5.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 5.0,
+              "per_level_above_first": 5.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:enchantable/armor"
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:remove_binomial",
+          "chance": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 2.0,
+              "per_level_above_first": 1.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 1.0,
+              "per_level_above_first": 1.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#minecraft:enchantable/armor"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "min_cost": {
+  "base": 30,
+  "per_level_above_first": 12
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 40
+  },
+  "max_level": 3,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/unbreaking",
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 1
+}

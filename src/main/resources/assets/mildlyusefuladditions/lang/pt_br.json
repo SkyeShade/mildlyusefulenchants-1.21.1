@@ -1,6 +1,4 @@
 {
-
-
   "mildlyusefuladditions.configuration.title": "MildlyUsefulAdditions Configs",
   "mildlyusefuladditions.configuration.section.mildlyusefuladditions.common.toml": "MildlyUsefulAdditions Configs",
   "mildlyusefuladditions.configuration.section.mildlyusefuladditions.common.toml.title": "MildlyUsefulAdditions Configs",
@@ -9,20 +7,23 @@
   "mildlyusefuladditions.configuration.magicNumberIntroduction": "Magic Number Text",
   "mildlyusefuladditions.configuration.magicNumber": "Magic Number",
 
-
   "enchantment.mildlyusefuladditions.multi_carver": "Escultor",
   "enchantment.mildlyusefuladditions.sleight": "Agilidade",
   "enchantment.mildlyusefuladditions.tunneling": "Tunelamento",
   "enchantment.mildlyusefuladditions.strip_tunneling": "Tunelamento Estreito",
   "enchantment.mildlyusefuladditions.reach": "Distância",
   "enchantment.mildlyusefuladditions.replenish": "Reprover",
+  "enchantment.mildlyusefuladditions.bulwark": "Bulwark",
   "enchantment.mildlyusefuladditions.clearance": "Clareza",
+  "enchantment.mildlyusefuladditions.leap": "Salto Alto",
   "enchantment.mildlyusefuladditions.legwork": "Passo Alto",
   "enchantment.mildlyusefuladditions.footwork": "Passos Rápidos",
-  "enchantment.mildlyusefuladditions.leap": "Salto Alto",
   "enchantment.mildlyusefuladditions.scope": "Mira",
-  "enchantment.mildlyusefuladditions.staff": "Cajado Mágico",
+  "enchantment.mildlyusefuladditions.vein_mining": "Mineração em Veia",
+  "enchantment.mildlyusefuladditions.enhanced_unbreaking": "Inquebrável Melhorado",
+  "enchantment.mildlyusefuladditions.perfected_unbreaking": "Inquebrável Perfeito",
 
+  "item.mildlyusefuladditions.long_bow": "Arco Longo",
   "item.mildlyusefuladditions.pipe_bomb": "Bomba Caseira",
 
   "item.minecraft.tipped_arrow.effect.nausea": "Flecha de Náusea",
@@ -63,5 +64,11 @@
   "item.minecraft.splash_potion.effect.blindness": "Poção Arremessável de Cegueira",
   "item.minecraft.splash_potion.effect.long_blindness": "Poção Arremessável de Cegueira",
   "item.minecraft.lingering_potion.effect.blindness": "Poção Prolongada de Cegueira",
-  "item.minecraft.lingering_potion.effect.long_blindness": "Poção Prolongada de Cegueira"
+  "item.minecraft.lingering_potion.effect.long_blindness": "Poção Prolongada de Cegueira",
+
+  "death.attack.mildlyusefuladditions.pipe_bomb": "%1$s foi obliterado por uma bomba caseira",
+  "death.attack.mildlyusefuladditions.pipe_bomb.player": "%1$s foi eviscerado pela bomba caseira de %2$s",
+  "death.attack.mildlyusefuladditions.pipe_bomb.item": "%1$s foi reduzido à átomos por %2$s usando %3$s",
+
+  "block.mildlyusefuladditions.improvised_explosive": "Explosivo Improvisado"
 }
