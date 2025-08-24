@@ -1,0 +1,17 @@
+{
+  "description": { "translate": "enchantment.mildlyusefuladditions.replenish" },
+
+  "max_level": 5,
+  "weight": 1,
+
+  "min_cost": { "base": 15, "per_level_above_first": 9 },
+  "max_cost": { "base": 65, "per_level_above_first": 9 },
+  "anvil_cost": 4,
+
+  "slots": ["mainhand"],
+
+  "supported_items": "#minecraft:enchantable/durability",
+  "primary_items":  "#minecraft:enchantable/durability",
+
+  "exclusive_set": "minecraft:mending"
+}

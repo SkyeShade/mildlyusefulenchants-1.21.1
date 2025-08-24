@@ -1,0 +1,25 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.strip_tunneling"
+  },
+  "effects": { },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/strip_tunneling",
+
+  "supported_items": "#minecraft:enchantable/mining",
+  "primary_items":   "#minecraft:enchantable/mining",
+  "weight": 1
+}

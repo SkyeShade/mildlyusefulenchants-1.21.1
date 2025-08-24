@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "mildlyusefuladditions:block/improvised_explosive_bottom",
+    "side": "mildlyusefuladditions:block/improvised_explosive_side",
+    "top": "mildlyusefuladditions:block/improvised_explosive_top"
+  }
+}

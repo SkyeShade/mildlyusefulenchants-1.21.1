@@ -1,0 +1,6 @@
+{
+    "parent": "mildlyusefuladditions:item/long_bow",
+    "textures": {
+        "layer0": "mildlyusefuladditions:item/long_bow_charge_0"
+    }
+}

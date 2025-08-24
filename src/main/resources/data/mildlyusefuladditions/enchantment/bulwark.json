@@ -1,0 +1,30 @@
+{
+	"description": { "translate": "enchantment.mildlyusefuladditions.bulwark" },
+	"supported_items": "#minecraft:enchantable/equippable",
+	"slots": ["armor"],
+	"weight": 1,
+	"anvil_cost": 10,
+	"min_cost": {
+		"base": 15,
+		"per_level_above_first": 11
+	},
+	"max_cost": {
+		"base": 65,
+		"per_level_above_first": 11
+	},
+	"max_level": 3,
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:generic.max_health",
+				"id": "mildlyusefuladditions:bulwark_health",
+				"amount": {
+				"type": "minecraft:linear",
+				"base": 0.0625,
+				"per_level_above_first": 0.0625
+				},
+				"operation": "add_multiplied_base"
+			}
+		]
+	}
+}

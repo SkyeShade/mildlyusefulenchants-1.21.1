@@ -1,0 +1,67 @@
+{
+
+
+  "mildlyusefuladditions.configuration.title": "MildlyUsefulAdditions Configs",
+  "mildlyusefuladditions.configuration.section.mildlyusefuladditions.common.toml": "MildlyUsefulAdditions Configs",
+  "mildlyusefuladditions.configuration.section.mildlyusefuladditions.common.toml.title": "MildlyUsefulAdditions Configs",
+  "mildlyusefuladditions.configuration.items": "Item List",
+  "mildlyusefuladditions.configuration.logDirtBlock": "Log Dirt Block",
+  "mildlyusefuladditions.configuration.magicNumberIntroduction": "Magic Number Text",
+  "mildlyusefuladditions.configuration.magicNumber": "Magic Number",
+
+
+  "enchantment.mildlyusefuladditions.multi_carver": "Escultor",
+  "enchantment.mildlyusefuladditions.sleight": "Agilidade",
+  "enchantment.mildlyusefuladditions.tunneling": "Tunelamento",
+  "enchantment.mildlyusefuladditions.strip_tunneling": "Tunelamento Estreito",
+  "enchantment.mildlyusefuladditions.reach": "Distância",
+  "enchantment.mildlyusefuladditions.replenish": "Reprover",
+  "enchantment.mildlyusefuladditions.clearance": "Clareza",
+  "enchantment.mildlyusefuladditions.legwork": "Passo Alto",
+  "enchantment.mildlyusefuladditions.footwork": "Passos Rápidos",
+  "enchantment.mildlyusefuladditions.leap": "Salto Alto",
+  "enchantment.mildlyusefuladditions.scope": "Mira",
+  "enchantment.mildlyusefuladditions.staff": "Cajado Mágico",
+
+  "item.mildlyusefuladditions.pipe_bomb": "Bomba Caseira",
+
+  "item.minecraft.tipped_arrow.effect.nausea": "Flecha de Náusea",
+  "item.minecraft.tipped_arrow.effect.long_nausea": "Flecha de Náusea",
+  "item.minecraft.potion.effect.nausea": "Poção de Náusea",
+  "item.minecraft.potion.effect.long_nausea": "Poção de Náusea",
+  "item.minecraft.splash_potion.effect.nausea": "Poção Arremessável de Náusea",
+  "item.minecraft.splash_potion.effect.long_nausea": "Poção Arremessável de Náusea",
+  "item.minecraft.lingering_potion.effect.nausea": "Poção Prolongada de Náusea",
+  "item.minecraft.lingering_potion.effect.long_nausea": "Poção Prolongada de Náusea",
+
+  "item.minecraft.tipped_arrow.effect.wither": "Flecha de Decomposição",
+  "item.minecraft.tipped_arrow.effect.long_wither": "Flecha de Decomposição",
+  "item.minecraft.tipped_arrow.effect.strong_wither": "Flecha de Decomposição",
+  "item.minecraft.potion.effect.wither": "Poção de Decomposição",
+  "item.minecraft.potion.effect.long_wither": "Poção de Decomposição",
+  "item.minecraft.potion.effect.strong_wither": "Poção de Decomposição",
+  "item.minecraft.splash_potion.effect.wither": "Poção Arremessável de Decomposição",
+  "item.minecraft.splash_potion.effect.long_wither": "Poção Arremessável de Decomposição",
+  "item.minecraft.splash_potion.effect.strong_wither": "Poção Arremessável de Decomposição",
+  "item.minecraft.lingering_potion.effect.wither": "Poção Prolongada de Decomposição",
+  "item.minecraft.lingering_potion.effect.long_wither": "Poção Prolongada de Decomposição",
+  "item.minecraft.lingering_potion.effect.strong_wither": "Poção Prolongada de Decomposição",
+
+  "item.minecraft.tipped_arrow.effect.darkness": "Flecha de Escuridão",
+  "item.minecraft.tipped_arrow.effect.long_darkness": "Flecha de Escuridão",
+  "item.minecraft.potion.effect.darkness": "Poção de Escuridão",
+  "item.minecraft.potion.effect.long_darkness": "Poção de Escuridão",
+  "item.minecraft.splash_potion.effect.darkness": "Poção Arremessável de Escuridão",
+  "item.minecraft.splash_potion.effect.long_darkness": "Poção Arremessável de Escuridão",
+  "item.minecraft.lingering_potion.effect.darkness": "Poção Prolongada de Escuridão",
+  "item.minecraft.lingering_potion.effect.long_darkness": "Poção Prolongada de Escuridão",
+
+  "item.minecraft.tipped_arrow.effect.blindness": "Flecha de Cegueira",
+  "item.minecraft.tipped_arrow.effect.long_blindness": "Flecha de Cegueira",
+  "item.minecraft.potion.effect.blindness": "Poção de Cegueira",
+  "item.minecraft.potion.effect.long_blindness": "Poção de Cegueira",
+  "item.minecraft.splash_potion.effect.blindness": "Poção Arremessável de Cegueira",
+  "item.minecraft.splash_potion.effect.long_blindness": "Poção Arremessável de Cegueira",
+  "item.minecraft.lingering_potion.effect.blindness": "Poção Prolongada de Cegueira",
+  "item.minecraft.lingering_potion.effect.long_blindness": "Poção Prolongada de Cegueira"
+}
