@@ -40,7 +40,7 @@ public class MildlyUsefulAdditions {
 
 
     public MildlyUsefulAdditions(IEventBus modEventBus, ModContainer modContainer) {
-        // Register the commonSetup method for modloading
+
         modEventBus.addListener(this::commonSetup);
 
         modContainer.registerConfig(
