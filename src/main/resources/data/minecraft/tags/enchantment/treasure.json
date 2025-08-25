@@ -1,7 +1,12 @@
 {
   "replace": false,
   "values": [
-
-    "mildlyusefuladditions:footwork"
+    "mildlyusefuladditions:enhanced_swift_sneak",
+    "mildlyusefuladditions:perfected_swift_sneak",
+    "mildlyusefuladditions:enhanced_soul_speed",
+    "mildlyusefuladditions:perfected_soul_speed",
+    "mildlyusefuladditions:footwork",
+    "mildlyusefuladditions:enhanced_footwork",
+    "mildlyusefuladditions:perfected_footwork"
   ]
 }

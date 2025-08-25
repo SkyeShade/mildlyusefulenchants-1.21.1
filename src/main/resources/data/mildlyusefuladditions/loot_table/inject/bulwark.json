@@ -1,0 +1,162 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 45,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:bulwark": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:bulwark": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 35,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:bulwark": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bulwark": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bulwark": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bulwark": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bulwark": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bulwark": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bulwark": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bulwark": 3
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "mildlyusefuladditions:bulwark"
+}

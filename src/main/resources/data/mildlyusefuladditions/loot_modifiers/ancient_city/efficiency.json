@@ -3,5 +3,5 @@
   "conditions": [
     { "condition": "neoforge:loot_table_id", "loot_table_id": "minecraft:chests/ancient_city" }
   ],
-  "table": "mildlyusefuladditions:inject/enhanced_efficiency"
+  "table": "mildlyusefuladditions:inject/efficiency"
 }

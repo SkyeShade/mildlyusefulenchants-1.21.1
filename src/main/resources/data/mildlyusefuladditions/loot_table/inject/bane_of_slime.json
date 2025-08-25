@@ -1,0 +1,162 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bane_of_slime": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bane_of_slime": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bane_of_slime": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bane_of_slime": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:enhanced_bane_of_slime": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bane_of_slime": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bane_of_slime": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bane_of_slime": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bane_of_slime": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "mildlyusefuladditions:perfected_bane_of_slime": 5
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "mildlyusefuladditions:bane_of_slime"
+}
