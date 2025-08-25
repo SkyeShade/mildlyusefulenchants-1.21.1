@@ -1,7 +1,7 @@
 {
-  "anvil_cost": 1,
+  "anvil_cost": 2,
   "description": {
-    "translate": "enchantment.mildlyusefuladditions.perfected_power"
+    "translate": "enchantment.mildlyusefuladditions.perfected_rotten_smite"
   },
   "effects": {
     "minecraft:damage": [
@@ -10,33 +10,34 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 2.5,
+            "base": 7.5,
             "per_level_above_first": 2.5
           }
         },
         "requirements": {
           "condition": "minecraft:entity_properties",
-          "entity": "direct_attacker",
+          "entity": "this",
           "predicate": {
-            "type": "#minecraft:arrows"
+            "type": "#mildlyusefuladditions:rotten"
           }
         }
       }
     ]
   },
-  "exclusive_set": "#mildlyusefuladditions:exclusive_set/power",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/undead_smite",
   "max_cost": {
-    "base": 46,
-    "per_level_above_first": 10
+    "base": 85,
+    "per_level_above_first": 8
   },
   "max_level": 5,
   "min_cost": {
-    "base": 21,
-    "per_level_above_first": 10
+    "base": 25,
+    "per_level_above_first": 8
   },
+  "primary_items": "#minecraft:enchantable/sword",
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/bow",
-  "weight": 1
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 3
 }

@@ -65,6 +65,15 @@ public class LongBow extends BowItem {
 
     }
 
+    private static final ResourceLocation ENHANCED_POWER_ID =
+            ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_power");
+    private static final ResourceKey<Enchantment> ENHANCED_POWER_KEY =
+            ResourceKey.create(Registries.ENCHANTMENT, ENHANCED_POWER_ID);
+
+    private static final ResourceLocation PERFECTED_POWER_ID =
+            ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_power");
+    private static final ResourceKey<Enchantment> PERFECTED_POWER_KEY =
+            ResourceKey.create(Registries.ENCHANTMENT, PERFECTED_POWER_ID);
 
 
     @Override
@@ -182,6 +191,14 @@ public class LongBow extends BowItem {
         int power = ench.get(Enchantments.POWER)
                 .map(h -> weapon.getEnchantmentLevel(h)).orElse(0);
         if (power > 0) arrow.setBaseDamage(arrow.getBaseDamage() + 0.5D * power + 0.5D);
+
+        int enhanced_power = ench.get(ENHANCED_POWER_KEY)
+                .map(h -> weapon.getEnchantmentLevel(h)).orElse(0);
+        if (enhanced_power > 0) arrow.setBaseDamage(arrow.getBaseDamage() + 1.0D * enhanced_power + 1.0D);
+
+        int perfected_power = ench.get(PERFECTED_POWER_KEY)
+                .map(h -> weapon.getEnchantmentLevel(h)).orElse(0);
+        if (perfected_power > 0) arrow.setBaseDamage(arrow.getBaseDamage() + 1.5D * perfected_power + 1.5D);
 
         boolean flame = ench.get(Enchantments.FLAME)
                 .map(h -> weapon.getEnchantmentLevel(h) > 0).orElse(false);

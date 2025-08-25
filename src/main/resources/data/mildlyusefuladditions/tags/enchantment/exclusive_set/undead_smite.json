@@ -1,19 +1,16 @@
 {
+  "replace": false,
   "values": [
     "minecraft:sharpness",
-    "minecraft:smite",
     "minecraft:bane_of_arthropods",
     "minecraft:impaling",
     "minecraft:density",
     "minecraft:breach",
-    "deeperdarker:sculk_smite",
-    "midlyusefuladditions:enhanced_smite",
     "midlyusefuladditions:enhanced_sharpness",
     "midlyusefuladditions:enhanced_bane_of_arthropods",
     "midlyusefuladditions:enhanced_impaling",
     "midlyusefuladditions:enhanced_density",
     "midlyusefuladditions:enhanced_breach",
-    "midlyusefuladditions:perfected_smite",
     "midlyusefuladditions:perfected_sharpness",
     "midlyusefuladditions:perfected_bane_of_arthropods",
     "midlyusefuladditions:perfected_impaling",
@@ -25,13 +22,11 @@
     "mildlyusefuladditions:bane_of_slime",
     "mildlyusefuladditions:enhanced_bane_of_slime",
     "mildlyusefuladditions:perfected_bane_of_slime",
-    "mildlyusefuladditions:endsmite",
-    "mildlyusefuladditions:enhanced_endsmite",
-    "mildlyusefuladditions:perfected_endsmite",
-    "mildlyusefuladditions:elemental_smite",
-    "mildlyusefuladditions:enhanced_elemental_smite",
-    "mildlyusefuladditions:perfected_elemental_smite",
-    "mildlyusefuladditions:enhanced_sculk_smite",
-    "mildlyusefuladditions:perfected_sculk_smite"
+    "mildlyusefuladditions:withered_smite",
+    "mildlyusefuladditions:enhanced_withered_smite",
+    "mildlyusefuladditions:perfected_withered_smite",
+    "mildlyusefuladditions:rotten_smite",
+    "mildlyusefuladditions:enhanced_rotten_smite",
+    "mildlyusefuladditions:perfected_rotten_smite"
   ]
 }

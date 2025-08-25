@@ -1,7 +1,7 @@
 {
   "anvil_cost": 2,
   "description": {
-    "translate": "enchantment.mildlyusefuladditions.enhanced_soto"
+    "translate": "enchantment.mildlyusefuladditions.enhanced_withered_smite"
   },
   "effects": {
     "minecraft:damage": [
@@ -10,7 +10,7 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 7.5,
+            "base": 5.0,
             "per_level_above_first": 2.5
           }
         },
@@ -18,20 +18,20 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "#midlyusefuladditions:sensitive_to_soto"
+            "type": "#mildlyusefuladditions:withered"
           }
         }
       }
     ]
   },
-  "exclusive_set": "#mildlyusefuladditions:exclusive_set/enhanced_damage",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/undead_smite",
   "max_cost": {
-    "base": 85,
+    "base": 75,
     "per_level_above_first": 8
   },
   "max_level": 5,
   "min_cost": {
-    "base": 25,
+    "base": 20,
     "per_level_above_first": 8
   },
   "primary_items": "#minecraft:enchantable/sword",
@@ -39,5 +39,5 @@
     "mainhand"
   ],
   "supported_items": "#minecraft:enchantable/weapon",
-  "weight": 2
+  "weight": 4
 }

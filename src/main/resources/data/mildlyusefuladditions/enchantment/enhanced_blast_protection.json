@@ -1,7 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.mildlyuseful.enhanced_blast_protection"
+    "translate": "enchantment.mildlyusefuladditions.enhanced_blast_protection"
   },
   "effects": {
     "minecraft:attributes": [

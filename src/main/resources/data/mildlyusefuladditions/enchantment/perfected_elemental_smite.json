@@ -1,7 +1,7 @@
 {
   "anvil_cost": 2,
   "description": {
-    "translate": "enchantment.mildlyusefuladditions.enhanced_soto"
+    "translate": "enchantment.mildlyusefuladditions.enhanced_elemental_smite"
   },
   "effects": {
     "minecraft:damage": [
@@ -10,7 +10,7 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 5,
+            "base": 7.5,
             "per_level_above_first": 2.5
           }
         },
@@ -18,7 +18,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "#midlyusefuladditions:sensitive_to_soto"
+            "type": "#midlyusefuladditions:sensitive_to_elemental_smite"
           }
         }
       }
@@ -26,12 +26,12 @@
   },
   "exclusive_set": "#mildlyusefuladditions:exclusive_set/enhanced_damage",
   "max_cost": {
-    "base": 75,
+    "base": 85,
     "per_level_above_first": 8
   },
   "max_level": 5,
   "min_cost": {
-    "base": 20,
+    "base": 25,
     "per_level_above_first": 8
   },
   "primary_items": "#minecraft:enchantable/sword",

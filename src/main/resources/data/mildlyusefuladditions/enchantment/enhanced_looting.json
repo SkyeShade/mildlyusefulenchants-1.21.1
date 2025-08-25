@@ -10,8 +10,8 @@
           "type": "minecraft:add",
           "value": {
             "type": "minecraft:linear",
-            "base": 0.03,
-            "per_level_above_first": 0.03
+            "base": 0.05,
+            "per_level_above_first": 0.05
           }
         },
         "enchanted": "attacker",

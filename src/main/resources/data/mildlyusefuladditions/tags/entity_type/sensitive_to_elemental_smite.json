@@ -9,6 +9,8 @@
     "minecraft:ghast",
     "minecraft:strider",
     "minecraft:stray",
-    "minecraft:breeze"
+    "minecraft:breeze",
+    "minecraft:zombified_piglin",
+    "minecraft:zoglin"
   ]
 }

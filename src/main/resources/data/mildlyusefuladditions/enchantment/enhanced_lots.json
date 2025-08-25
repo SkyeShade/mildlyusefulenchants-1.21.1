@@ -1,7 +1,7 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.mildlyusefulenchants.enhanced_lots"
+    "translate": "enchantment.mildlyusefuladditions.enhanced_lots"
   },
   "effects": {
     "minecraft:fishing_luck_bonus": [
