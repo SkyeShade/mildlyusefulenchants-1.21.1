@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:power",
+    "mildlyusefuladditions:perfected_power",
+    "mildlyusefuladditions:enhanced_power"
+  ]
+}

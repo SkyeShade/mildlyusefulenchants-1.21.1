@@ -1,0 +1,31 @@
+{
+  "description": { "translate": "enchantment.mildlyusefuladditions.perfected_legwork" },
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "slots": ["armor"],
+  "weight": 1,
+  "anvil_cost": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 10
+  },
+  "max_level": 1,
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/legwork",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.step_height",
+        "id": "mildlyusefuladditions:step_height",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.5,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

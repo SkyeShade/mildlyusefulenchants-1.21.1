@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:feather_falling",
+    "mildlyusefuladditions:perfected_feather_falling",
+    "mildlyusefuladditions:enhanced_feather_falling"
+  ]
+}

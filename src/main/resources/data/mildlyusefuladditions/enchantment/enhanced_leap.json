@@ -1,0 +1,58 @@
+{
+  "description": { "translate": "enchantment.mildlyusefuladditions.enhanced_leap" },
+  "supported_items": "#minecraft:enchantable/leg_armor",
+  "slots": ["armor"],
+  "weight": 3,
+  "anvil_cost": 4,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "max_level": 3,
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/leap",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.jump_strength",
+        "id": "mildlyusefuladditions:leap_height",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_base"
+      }
+    ],
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2.0,
+            "per_level_above_first": 2.0
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_fall"
+              },
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

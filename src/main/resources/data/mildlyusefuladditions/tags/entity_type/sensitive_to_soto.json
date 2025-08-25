@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:guardian",
+    "minecraft:elder_guardian",
+    "minecraft:drowned",
+    "minecraft:wither_skeleton",
+    "minecraft:wither",
+    "minecraft:blaze",
+    "minecraft:ghast",
+    "minecraft:strider",
+    "minecraft:stray",
+    "minecraft:breeze"
+  ]
+}

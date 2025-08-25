@@ -1,0 +1,21 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.enhanced_fortune"
+  },
+  "min_cost": {
+    "base": 22,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 3,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/fortune",
+  "supported_items": "#minecraft:enchantable/mining_loot",
+  "weight": 1
+}

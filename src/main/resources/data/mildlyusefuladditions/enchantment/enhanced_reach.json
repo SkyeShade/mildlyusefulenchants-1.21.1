@@ -1,0 +1,41 @@
+{
+  "description": { "translate": "enchantment.mildlyusefuladditions.enhanced_reach" },
+
+  "max_level": 3,
+  "weight": 2,
+
+  "min_cost": { "base": 20, "per_level_above_first": 9 },
+  "max_cost": { "base": 75, "per_level_above_first": 9 },
+  "anvil_cost": 4,
+
+  "slots": ["mainhand"],
+
+  "supported_items": "#mildlyusefuladditions:enchantable/reach_tools",
+  "primary_items":  "#mildlyusefuladditions:enchantable/reach_tools",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/reach",
+
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:player.block_interaction_range",
+        "id": "mildlyusefuladditions:reach_block_range",
+        "operation": "add_value",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.5,
+          "per_level_above_first": 0.5
+        }
+      },
+      {
+        "attribute": "minecraft:player.entity_interaction_range",
+        "id": "mildlyusefuladditions:reach_entity_range",
+        "operation": "add_value",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 0.5
+        }
+      }
+    ]
+  }
+}

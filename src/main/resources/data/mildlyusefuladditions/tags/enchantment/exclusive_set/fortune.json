@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:silk_touch",
+    "minecraft:fortune",
+    "mildlyusefuladditions:perfected_fortune",
+    "mildlyusefuladditions:enhanced_fortune"
+  ]
+}

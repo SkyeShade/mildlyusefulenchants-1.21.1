@@ -17,8 +17,8 @@
             },
             "numerator": {
               "type": "minecraft:linear",
-              "base": 5.0,
-              "per_level_above_first": 5.0
+              "base": 4.5,
+              "per_level_above_first": 4.5
             }
           }
         },
@@ -41,8 +41,8 @@
             },
             "numerator": {
               "type": "minecraft:linear",
-              "base": 1.0,
-              "per_level_above_first": 1.0
+              "base": 1.75,
+              "per_level_above_first": 1.025
             }
           }
         },
@@ -59,12 +59,12 @@
     ]
   },
   "min_cost": {
-  "base": 30,
+  "base": 28,
   "per_level_above_first": 12
   },
   "max_cost": {
-    "base": 30,
-    "per_level_above_first": 40
+    "base": 80,
+    "per_level_above_first": 20
   },
   "max_level": 3,
   "slots": [

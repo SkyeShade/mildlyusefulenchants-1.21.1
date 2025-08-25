@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:punch",
+    "mildlyusefuladditions:perfected_punch",
+    "mildlyusefuladditions:enhanced_punch"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "anvil_cost": 4,
+  "description": { "translate": "enchantment.mildlyusefuladditions.enhanced_sleight" },
+  "max_cost": { "base": 75, "per_level_above_first": 9 },
+  "max_level": 3,
+  "min_cost": { "base": 20, "per_level_above_first": 9 },
+  "slots": ["mainhand"],
+
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/sleight",
+  "supported_items": "#mildlyusefuladditions:enchantable/sleight_tools",
+  "primary_items": "#mildlyusefuladditions:enchantable/sleight_tools",
+
+  "weight": 2,
+
+  "effects": {
+    "minecraft:attributes": [
+      {
+
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "mildlyusefuladditions:sleight_speed",
+        "operation": "add_value",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.6,
+          "per_level_above_first": 0.2
+        }
+      }
+    ]
+  }
+}

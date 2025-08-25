@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:efficiency",
+    "mildlyusefuladditions:perfected_efficiency",
+    "mildlyusefuladditions:enhanced_efficiency"
+  ]
+}

@@ -2,14 +2,14 @@
   "description": { "translate": "enchantment.mildlyusefuladditions.reach" },
 
   "max_level": 3,
-  "weight": 1,
+  "weight": 3,
 
   "min_cost": { "base": 15, "per_level_above_first": 9 },
   "max_cost": { "base": 65, "per_level_above_first": 9 },
   "anvil_cost": 4,
 
   "slots": ["mainhand"],
-
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/reach",
   "supported_items": "#mildlyusefuladditions:enchantable/reach_tools",
   "primary_items":  "#mildlyusefuladditions:enchantable/reach_tools",
 

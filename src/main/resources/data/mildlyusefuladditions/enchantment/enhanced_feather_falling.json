@@ -1,0 +1,50 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.enhanced_feather_falling"
+  },
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 12.0,
+            "per_level_above_first": 3.0
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_fall"
+              },
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 6
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 6
+  },
+  "slots": [
+    "armor"
+  ],
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/feather_falling",
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 3
+}

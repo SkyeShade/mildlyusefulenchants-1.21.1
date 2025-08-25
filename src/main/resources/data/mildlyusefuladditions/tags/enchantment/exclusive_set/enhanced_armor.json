@@ -1,0 +1,15 @@
+{
+  "values": [
+    "minecraft:protection",
+    "minecraft:blast_protection",
+    "minecraft:fire_protection",
+    "minecraft:projectile_protection",
+    "mildlyusefuladditions:enhanced_protection",
+    "mildlyusefuladditions:enhanced_blast_protection",
+    "mildlyusefuladditions:enhanced_fire_protection",
+    "mildlyusefuladditions:enhanced_projectile_protection",
+    "mildlyusefuladditions:perfected_blast_protection",
+    "mildlyusefuladditions:perfected_fire_protection",
+    "mildlyusefuladditions:perfected_projectile_protection"
+  ]
+}

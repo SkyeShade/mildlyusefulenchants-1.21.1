@@ -1,0 +1,31 @@
+{
+  "description": { "translate": "enchantment.mildlyusefuladditions.enhanced_footwork" },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "slots": ["armor"],
+  "weight": 2,
+  "anvil_cost": 7,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 8
+  },
+  "max_level": 2,
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/footwork",
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "id": "mildlyusefuladditions:footwork_speed",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_base"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "description": { "translate": "enchantment.mildlyusefuladditions.legwork" },
   "supported_items": "#minecraft:enchantable/leg_armor",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/legwork",
   "slots": ["armor"],
   "weight": 5,
   "anvil_cost": 4,
