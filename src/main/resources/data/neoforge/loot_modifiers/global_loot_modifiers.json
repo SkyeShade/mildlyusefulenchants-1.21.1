@@ -2,6 +2,12 @@
   "replace": false,
   "entries": [
     "mildlyusefuladditions:ancient_city_footwork",
+    "mildlyusefuladditions:ancient_city_enhanced_efficiency",
+    "mildlyusefuladditions:ancient_city_perfected_efficiency",
+    "mildlyusefuladditions:ancient_city_enhanced_fortune",
+    "mildlyusefuladditions:ancient_city_perfected_fortune",
+    "mildlyusefuladditions:ancient_city_enhanced_unbreaking",
+    "mildlyusefuladditions:ancient_city_perfected_unbreaking",
     "mildlyusefuladditions:enhanced_fortune",
     "mildlyusefuladditions:enhanced_looting"
   ]
