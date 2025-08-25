@@ -28,6 +28,7 @@ public class ModItems {
             () -> new PipeBomb(new Item.Properties().stacksTo(16)));
     public static final DeferredHolder<Item, BlockItem> IMPROVISED_EXPLOSIVE = ITEMS.register("improvised_explosive",
             () -> new BlockItem(ModBlocks.IMPROVISED_EXPLOSIVE.get(), new Item.Properties()));
+
     public static final DeferredHolder<Item, Item> STAFF = ITEMS.register("staff",
             () -> new Staff(new Item.Properties().durability(235)));
 

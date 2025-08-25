@@ -167,7 +167,7 @@ public class LongBow extends BowItem {
         int enchScopeLevel = enchantLevelGameplay(stack, shooter.level(), ResourceKey.create(Registries.ENCHANTMENT,ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "scope")));
 
 
-        System.out.println(drawProgress);
+
         if (enchScopeLevel != 0 && drawProgress >= 0.9F) {
 
             projectile.setNoGravity(true);
@@ -175,18 +175,18 @@ public class LongBow extends BowItem {
     }
 
     @Override
-    protected net.minecraft.world.entity.projectile.Projectile createProjectile(
-            net.minecraft.world.level.Level level,
-            net.minecraft.world.entity.LivingEntity shooter,
-            net.minecraft.world.item.ItemStack weapon,
-            net.minecraft.world.item.ItemStack ammo,
+    protected Projectile createProjectile(
+            Level level,
+            LivingEntity shooter,
+            ItemStack weapon,
+            ItemStack ammo,
             boolean isCrit) {
 
         var arrow = new LongBowArrow(level, shooter, ammo, weapon);
         arrow.setCritArrow(isCrit);
 
 
-        var ench = level.registryAccess().lookupOrThrow(net.minecraft.core.registries.Registries.ENCHANTMENT);
+        var ench = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
         int power = ench.get(Enchantments.POWER)
                 .map(h -> weapon.getEnchantmentLevel(h)).orElse(0);

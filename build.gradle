@@ -120,13 +120,16 @@ configurations {
 }
 
 dependencies {
-    localRuntime files('libs/enchdesc-neoforge-1.21.1-21.1.8.jar')
-    localRuntime files('libs/deeperdarker-neoforge-1.21.1-1.3.5.jar')
+
+
 
     implementation "curse.maven:enchantment-descriptions-250419:6910375"
     implementation "curse.maven:deeperdarker-659011:6463247"
-
-
+    runtimeOnly "curse.maven:enchantment-descriptions-250419:6910375"
+    runtimeOnly "curse.maven:deeperdarker-659011:6463247"
+    runtimeOnly "curse.maven:bookshelf-228525:6909578"
+    runtimeOnly "curse.maven:prickle-1023259:6910558"
+    runtimeOnly  "curse.maven:jade-324717:6853386"
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

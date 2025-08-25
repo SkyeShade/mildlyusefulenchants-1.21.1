@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "entries": ["mildlyusefuladditions:ancient_city_footwork"]
+  "entries": [
+    "mildlyusefuladditions:ancient_city_footwork",
+    "mildlyusefuladditions:enhanced_fortune",
+    "mildlyusefuladditions:enhanced_looting"
+  ]
 }

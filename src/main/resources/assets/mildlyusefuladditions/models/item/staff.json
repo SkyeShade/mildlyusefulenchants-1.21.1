@@ -1,6 +1,20 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "mildlyusefuladditions:item/staff"
-  }
+	"parent": "item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"base": {
+		"parent": "mildlyusefuladditions:item/staff_full"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "mildlyusefuladditions:item/staff_inventory"
+		},
+		"ground": {
+			"parent": "mildlyusefuladditions:item/staff_inventory"
+		},
+		"fixed": {
+			"parent": "mildlyusefuladditions:item/staff_inventory"
+		}
+
+	}
+
 }

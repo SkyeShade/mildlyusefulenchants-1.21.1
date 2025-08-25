@@ -6,6 +6,7 @@ import com.skyeshade.mildlyusefuladditions.brewing.ModMobEffects;
 import com.skyeshade.mildlyusefuladditions.datacomponents.ModDataComponents;
 import com.skyeshade.mildlyusefuladditions.entity.ModEntities;
 import com.skyeshade.mildlyusefuladditions.item.ModItems;
+import com.skyeshade.mildlyusefuladditions.loot.ModLootModifiers;
 import com.skyeshade.mildlyusefuladditions.util.TickScheduler;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
@@ -58,6 +59,8 @@ public class MildlyUsefulAdditions {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModMobEffects.register(modEventBus);
+
+        ModLootModifiers.GLM_CODECS.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
