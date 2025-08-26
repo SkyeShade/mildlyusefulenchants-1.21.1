@@ -26,6 +26,7 @@
   "enchantment.mildlyusefuladditions.endsmite": "Julgamento do Fim",
   "enchantment.mildlyusefuladditions.rotten_smite": "Julgamento dos Apodrecidos",
   "enchantment.mildlyusefuladditions.withered_smite": "Julgamento dos Decompostos",
+  "enchantment.mildlyusefuladditions.wisdom": "Sabedoria",
 
   "enchantment.mildlyusefuladditions.enhanced_bane_of_arthropods": "Ruína dos Artrópodes Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_bane_of_raiding": "Ruína dos Invasores Aprimorada",
@@ -50,6 +51,7 @@
   "enchantment.mildlyusefuladditions.enhanced_legwork": "Passo Alto Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_looting": "Saque Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_lots": "Sorte do Mar Aprimorada",
+  "enchantment.mildlyusefuladditions.enhanced_loyalty": "Lealdade Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_lure": "Isca Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_piercing": "Perfuração Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_power": "Força Aprimorada",
@@ -70,6 +72,7 @@
   "enchantment.mildlyusefuladditions.enhanced_swift_sneak": "Passos Furtivos Aprimorados",
   "enchantment.mildlyusefuladditions.enhanced_unbreaking": "Inquebrável Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite": "Julgamento dos Decompostos Aprimorado",
+  "enchantment.mildlyusefuladditions.enhanced_wisdom": "Sabedoria Avançada",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods": "Ruína dos Artrópodes Perfeita",
   "enchantment.mildlyusefuladditions.perfected_bane_of_raiding": "Ruína dos Invasores Perfeita",
@@ -94,6 +97,7 @@
   "enchantment.mildlyusefuladditions.perfected_legwork": "Passo Alto Perfeito",
   "enchantment.mildlyusefuladditions.perfected_looting": "Saque Perfeito",
   "enchantment.mildlyusefuladditions.perfected_lots": "Sorte do Mar Perfeita",
+  "enchantment.mildlyusefuladditions.perfected_loyalty": "Lealdade Perfeita",
   "enchantment.mildlyusefuladditions.perfected_lure": "Isca Perfeita",
   "enchantment.mildlyusefuladditions.perfected_piercing": "Perfuração Perfeita",
   "enchantment.mildlyusefuladditions.perfected_power": "Força Perfeita",
@@ -113,7 +117,7 @@
   "enchantment.mildlyusefuladditions.perfected_swift_sneak": "Passos Furtivos Perfeitos",
   "enchantment.mildlyusefuladditions.perfected_unbreaking": "Inquebrável Perfeito",
   "enchantment.mildlyusefuladditions.perfected_withered_smite": "Julgamento dos Decompostos Perfeito",
-
+  "enchantment.mildlyusefuladditions.perfected_wisdom": "Sabedoria Mestra",
 
   "enchantment.mildlyusefuladditions.bane_of_raiding.desc": "Aumenta o dano contra mobs Invasores como Vindicadores e Bruxas.",
   "enchantment.mildlyusefuladditions.bane_of_slime.desc": "Aumenta o dano contra Slimes e Cubos de Magma.",
@@ -133,6 +137,7 @@
   "enchantment.mildlyusefuladditions.vein_mining.desc": "Minerar todos os minérios/troncos adjacentes ao bloco original, teleporta a experiência e drops para o primeiro bloco minerado. Funciona na diagonal.",
   "enchantment.mildlyusefuladditions.rotten_smite.desc": "Causa dano adicional a todos os mobs zumbis.",
   "enchantment.mildlyusefuladditions.withered_smite.desc": "Causa dano adicional a todos os mobs esqueletos.",
+  "enchantment.mildlyusefuladditions.wisdom.desc": "Aumenta ligeiramente o EXP ganho de Mobs e Minérios.",
 
   "enchantment.minecraft.sharpness.desc": "Aumenta o dano da arma.",
 
@@ -180,6 +185,7 @@
   "enchantment.mildlyusefuladditions.enhanced_swift_sneak.desc": "Aumenta ainda mais a velocidade de movimento ao se agachar.",
   "enchantment.mildlyusefuladditions.enhanced_unbreaking.desc": "Reduz ainda mais a perda de durabilidade da ferramenta.",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite.desc": "Causa um pouco mais de dano adicional a todos os mobs esqueletos.",
+  "enchantment.mildlyusefuladditions.enhanced_wisdom.desc": "Aumenta ainda mais o EXP ganho de Mobs e Minérios.",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods.desc": "Aumenta muito o dano contra artrópodes como Aranhas e Traças.",
   "enchantment.mildlyusefuladditions.perfected_bane_of_raiding.desc": "Aumenta muito o dano contra mobs Saqueadores como Vindicadores e Bruxas.",
@@ -225,6 +231,7 @@
   "enchantment.mildlyusefuladditions.perfected_swift_sneak.desc": "Aumenta muito a velocidade de movimento ao se agachar.",
   "enchantment.mildlyusefuladditions.perfected_unbreaking.desc": "Reduz muito a perda de durabilidade da ferramenta.",
   "enchantment.mildlyusefuladditions.perfected_withered_smite.desc": "Causa muito mais dano adicional a todos os mobs esqueletos.",
+  "enchantment.mildlyusefuladditions.perfected_wisdom.desc": "Aumenta muito o EXP ganho de Mobs e Minérios.",
 
   "item.mildlyusefuladditions.long_bow": "Arco Longo",
   "item.mildlyusefuladditions.pipe_bomb": "Bomba Caseira",

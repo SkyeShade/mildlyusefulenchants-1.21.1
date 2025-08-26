@@ -30,6 +30,7 @@
   "enchantment.mildlyusefuladditions.endsmite": "Endsmite",
   "enchantment.mildlyusefuladditions.withered_smite": "Withered Smite",
   "enchantment.mildlyusefuladditions.rotten_smite": "Withered Smite",
+  "enchantment.mildlyusefuladditions.wisdom": "Wisdom",
 
   "enchantment.mildlyusefuladditions.enhanced_bane_of_arthropods": "Enhanced Bane of Arthropods",
   "enchantment.mildlyusefuladditions.enhanced_bane_of_raiding": "Enhanced Bane of Raiding",
@@ -75,6 +76,7 @@
   "enchantment.mildlyusefuladditions.enhanced_swift_sneak": "Enhanced Swift Sneak",
   "enchantment.mildlyusefuladditions.enhanced_unbreaking": "Enhanced Unbreaking",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite": "Enhanced Withered Smite",
+  "enchantment.mildlyusefuladditions.enhanced_wisdom": "Advanced Wisdom",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods": "Perfected Bane of Arthropods",
   "enchantment.mildlyusefuladditions.perfected_bane_of_raiding": "Perfected Bane of Raiding",
@@ -119,6 +121,7 @@
   "enchantment.mildlyusefuladditions.perfected_swift_sneak": "Perfected Swift Sneak",
   "enchantment.mildlyusefuladditions.perfected_unbreaking": "Perfected Unbreaking",
   "enchantment.mildlyusefuladditions.perfected_withered_smite": "Perfected Withered Smite",
+  "enchantment.mildlyusefuladditions.perfected_wisdom": "Masterful Wisdom",
 
   "enchantment.mildlyusefuladditions.bane_of_raiding.desc": "Increases damage against Raider mobs such as Vindicators and Witches.",
   "enchantment.mildlyusefuladditions.bane_of_slime.desc": "Increases damage against Slime and Magma Cubes.",
@@ -138,6 +141,7 @@
   "enchantment.mildlyusefuladditions.vein_mining.desc": "Mines all ores/logs adjacent to the original block, and teleports xp/drops to the first mined block. Works diagonally.",
   "enchantment.mildlyusefuladditions.rotten_smite.desc": "Deals  additional damage to all zombie mobs.",
   "enchantment.mildlyusefuladditions.withered_smite.desc": "Deals additional damage to all skeletal mobs.",
+  "enchantment.mildlyusefuladditions.wisdom.desc": "Slightly increases the XP gain from Mobs and Ores.",
 
   "enchantment.minecraft.sharpness.desc": "Increases the damage of the weapon.",
 
@@ -185,6 +189,7 @@
   "enchantment.mildlyusefuladditions.enhanced_swift_sneak.desc": "Further increases movement speed while sneaking.",
   "enchantment.mildlyusefuladditions.enhanced_unbreaking.desc": "Further reduces durability loss of the tool.",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite.desc": "Deals slightly more additional damage to all skeletal mobs.",
+  "enchantment.mildlyusefuladditions.enhanced_wisdom.desc": "Further increases the XP gain from Mobs and Ores.",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods.desc": "Greatly increases damage against arthropods such as Spiders and Silverfish.",
   "enchantment.mildlyusefuladditions.perfected_bane_of_raiding.desc": "Greatly increases damage against Raider mobs such as Vindicators and Witches.",
@@ -230,6 +235,7 @@
   "enchantment.mildlyusefuladditions.perfected_swift_sneak.desc": "Greatly increases movement speed while sneaking.",
   "enchantment.mildlyusefuladditions.perfected_unbreaking.desc": "Greatly reduces durability loss of the tool.",
   "enchantment.mildlyusefuladditions.perfected_withered_smite.desc": "Deals much more additional damage to all skeletal mobs.",
+  "enchantment.mildlyusefuladditions.perfected_wisdom.desc": "Greatly increases the XP gain from Mobs and Ores.",
 
   "item.mildlyusefuladditions.long_bow": "Long Bow",
   "item.mildlyusefuladditions.pipe_bomb": "Pipe Bomb",

@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 35,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.perfected_wisdom"
+  },
+  "max_cost": {
+    "base": 95,
+    "per_level_above_first": 8
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 40,
+    "per_level_above_first": 8
+  },
+  "supported_items": "#mildlyusefuladditions:enchantable/reach_tools",
+  "primary_items":  "#mildlyusefuladditions:enchantable/reach_tools",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/wisdom",
+  "slots": [
+    "mainhand"
+  ],
+  "weight": 1
+}
