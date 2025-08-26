@@ -1,13 +1,17 @@
 {
   "replace": false,
   "entries": [
-    "mildlyusefuladditions:ancient_city/enhanced_efficiency",
-    "mildlyusefuladditions:ancient_city_footwork",
-    "mildlyusefuladditions:enhanced_efficiency",
-    "mildlyusefuladditions:ancient_city_perfected_efficiency",
-    "mildlyusefuladditions:ancient_city_enhanced_fortune",
-    "mildlyusefuladditions:ancient_city_perfected_fortune",
-    "mildlyusefuladditions:ancient_city_enhanced_unbreaking",
-    "mildlyusefuladditions:ancient_city_perfected_unbreaking"
+    "mildlyusefuladditions:ancient_city",
+    "mildlyusefuladditions:bastion_bridge",
+    "mildlyusefuladditions:bastion_hoglin_stable",
+    "mildlyusefuladditions:bastion_other",
+    "mildlyusefuladditions:bastion_treasure",
+    "mildlyusefuladditions:buried_treasure",
+    "mildlyusefuladditions:desert_pyramid",
+    "mildlyusefuladditions:end_city_treasure",
+    "mildlyusefuladditions:jungle_temple_dispenser",
+    "mildlyusefuladditions:jungle_temple",
+    "mildlyusefuladditions:nether_bridge",
+    "mildlyusefuladditions:pillager_outpost"
   ]
 }
