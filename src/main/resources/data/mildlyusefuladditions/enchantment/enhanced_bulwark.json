@@ -4,7 +4,7 @@
 	"slots": ["armor"],
   "exclusive_set": "#mildlyusefuladditions:exclusive_set/bulwark",
 	"weight": 2,
-	"anvil_cost": 10,
+	"anvil_cost": 20,
 	"min_cost": {
 		"base": 20,
 		"per_level_above_first": 11

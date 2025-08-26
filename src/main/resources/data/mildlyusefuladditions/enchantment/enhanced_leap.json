@@ -3,7 +3,7 @@
   "supported_items": "#minecraft:enchantable/leg_armor",
   "slots": ["armor"],
   "weight": 3,
-  "anvil_cost": 4,
+  "anvil_cost": 16,
   "min_cost": {
     "base": 15,
     "per_level_above_first": 10

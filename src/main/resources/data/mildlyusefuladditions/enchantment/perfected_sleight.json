@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 4,
+  "anvil_cost": 26,
   "description": { "translate": "enchantment.mildlyusefuladditions.perfected_sleight" },
   "max_cost": { "base": 75, "per_level_above_first": 9 },
   "max_level": 3,
