@@ -38,7 +38,7 @@
   "slots": [
     "mainhand"
   ],
-  "exclusive_set": "#mildlyusefuladditions:exclusive_set/fire_aspect",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/damage_aspect",
   "supported_items": "#minecraft:enchantable/fire_aspect",
   "weight": 2
 }

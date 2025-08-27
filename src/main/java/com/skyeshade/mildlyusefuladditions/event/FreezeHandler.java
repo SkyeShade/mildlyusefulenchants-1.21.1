@@ -1,64 +1,97 @@
 package com.skyeshade.mildlyusefuladditions.event;
 
 import com.skyeshade.mildlyusefuladditions.MildlyUsefulAdditions;
+import com.skyeshade.mildlyusefuladditions.util.TickScheduler;
+import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.damagesource.DamageSources;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-
+import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.neoforge.event.entity.player.AttackEntityEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 @EventBusSubscriber(modid = MildlyUsefulAdditions.MODID)
 public class FreezeHandler {
 
-    private static final ResourceKey<Enchantment> FREEZE_ASPECT_KEY =
-            ResourceKey.create(Registries.ENCHANTMENT,
-                    ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "freeze_aspect"));
-    private static final ResourceKey<Enchantment> ENHANCED_FREEZE_KEY =
-            ResourceKey.create(Registries.ENCHANTMENT,
-                    ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_freeze_aspect"));
-    private static final ResourceKey<Enchantment> PERFECTED_FREEZE_KEY =
-            ResourceKey.create(Registries.ENCHANTMENT,
-                    ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_freeze_aspect"));
+    @SubscribeEvent
+    public static void onHurtEntity (AttackEntityEvent e) {
+        Player attacker = e.getEntity();
+        if (attacker.level().isClientSide) return;
+        Entity target = e.getTarget();
 
-    /*@SubscribeEvent
-    public static void onAttack(LivingHurtEvent event) {
-        if (!(event.getSource().getEntity() instanceof ServerPlayer player)) return;
-        if (!(player.level() instanceof ServerLevel level)) return;
+        ItemStack weapon = attacker.getWeaponItem();
+        ResourceLocation freezeAspectId = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "freeze_aspect");
+        ResourceLocation efreezeAspectId = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_freeze_aspect");
+        ResourceLocation pfreezeAspectId = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_freeze_aspect");
 
-        ItemStack weapon = player.getMainHandItem();
-        int freezeTicks = getTotalFreezeTicks(level, weapon);
+        ItemEnchantments enchants = weapon.get(DataComponents.ENCHANTMENTS);
+        if (enchants != null) {
+            for (var entry : enchants.entrySet()) {
+                Holder<Enchantment> enchant = entry.getKey();
 
-        if (freezeTicks > 0 && event.getEntity() instanceof LivingEntity target) {
-            target.setTicksFrozen(Math.min(target.getTicksFrozen() + freezeTicks, target.getTicksRequiredToFreeze()));
+                if (enchant.unwrapKey().isPresent() && enchant.unwrapKey().get().location().equals(freezeAspectId)) {
 
-            // Opcional: causar um pequeno dano de congelamento imediato
-            if (target.getTicksFrozen() >= target.getTicksRequiredToFreeze()) {
-                event.getEntity().hurt(level.damageSources().freeze(), 1.0F);
+
+
+                    int levelEnchant = enchants.getLevel(enchant);
+                    System.out.println(levelEnchant);
+                    int freezeTicks = levelEnchant * 80;
+                    System.out.println(freezeTicks);
+                    target.setTicksFrozen(80 * 2);
+
+                }
             }
         }
+
     }
 
-    private static int getTotalFreezeTicks(ServerLevel level, ItemStack stack) {
-        var lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
-        int total = 0;
+    @SubscribeEvent
+    public static void onPlayerTick (PlayerTickEvent.Post e) {
+        if (!(e.getEntity() instanceof Player player)) return;
+        if (player.level().isClientSide()) return;
+        //System.out.println("event fired and is server");
 
-        var normal = lookup.get(FREEZE_ASPECT_KEY).orElse(null);
-        if (normal != null) total += EnchantmentHelper.getItemEnchantmentLevel(normal, stack) * 40; // 2s por nível
+        ResourceLocation clearanceId = ResourceLocation.fromNamespaceAndPath("mildlyusefuladditions", "clearance");
 
-        var enhanced = lookup.get(ENHANCED_FREEZE_KEY).orElse(null);
-        if (enhanced != null) total += EnchantmentHelper.getItemEnchantmentLevel(enhanced, stack) * 200; // ~10s
 
-        var perfected = lookup.get(PERFECTED_FREEZE_KEY).orElse(null);
-        if (perfected != null) total += EnchantmentHelper.getItemEnchantmentLevel(perfected, stack) * 1000; // ~50s
+        Iterable<ItemStack> armorItems = player.getArmorSlots();
+        for (ItemStack item : armorItems) {
+            ItemEnchantments enchants = item.get(DataComponents.ENCHANTMENTS);
+            if (enchants != null) {
 
-        return total;
-    }*/
+                for (var entry : enchants.entrySet()) {
+
+                    Holder<Enchantment> enchant = entry.getKey();
+
+                    if (enchant.unwrapKey().isPresent() && enchant.unwrapKey().get().location().equals(clearanceId)) {
+                        if (player.hasEffect(MobEffects.DARKNESS)) {
+                            player.removeEffect(MobEffects.DARKNESS);
+                        }
+
+                        player.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, false, false));
+
+
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
 }

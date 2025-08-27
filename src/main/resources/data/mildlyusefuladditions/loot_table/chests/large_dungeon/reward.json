@@ -1,0 +1,76 @@
+{
+  "type": "vault",
+  "pools": [
+    {
+      "rolls": 5,
+      "bonus_rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:stored_enchantments": {
+                  "levels": {
+                    "mildlyusefuladditions:perfected_unbreaking": 5
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 10,
+          "value": "minecraft:chests/trial_chambers/reward_ominous",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 7,
+          "value": "minecraft:chests/trial_chambers/reward_ominous_rare",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 6,
+          "value": "minecraft:chests/trial_chambers/reward_ominous_common",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "weight": 3,
+          "value": "mildlyusefuladditions:chests/large_dungeon/reward_unique",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

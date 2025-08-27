@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.freeze_aspect"
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 20
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 8,
+    "per_level_above_first": 20
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/damage_aspect",
+  "supported_items": "#minecraft:enchantable/fire_aspect",
+  "weight": 5
+}
