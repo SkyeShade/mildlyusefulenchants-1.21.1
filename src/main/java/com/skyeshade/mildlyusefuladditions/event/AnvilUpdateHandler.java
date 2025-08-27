@@ -3,6 +3,7 @@ package com.skyeshade.mildlyusefuladditions.event;
 import com.skyeshade.mildlyusefuladditions.MildlyUsefulAdditions;
 
 import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -28,26 +29,49 @@ import java.util.Optional;
 @EventBusSubscriber(modid = MildlyUsefulAdditions.MODID)
 public class AnvilUpdateHandler {
 
-    static ResourceLocation wisdom = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "wisdom");
-    static ResourceLocation eWisdom = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "advanced_wisdom");
-    static ResourceLocation pWisdom = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "masterful_wisdom");
+    static final ResourceLocation WISDOM_RL   = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "wisdom");
+    static final ResourceLocation ADV_WISDOM_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "advanced_wisdom");
+    static final ResourceLocation MASTER_WISDOM_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "masterful_wisdom"); // if needed later
 
     @SubscribeEvent
     public static void onAnvilUpdate(AnvilUpdateEvent event) {
-        ItemStack left = event.getLeft();
+        ItemStack left  = event.getLeft();
         ItemStack right = event.getRight();
         if (left.isEmpty() || right.isEmpty()) return;
-        if (left.getItem() == Items.ENCHANTED_BOOK && right.getItem() == Items.ECHO_SHARD) {
-            ItemEnchantments enchants = left.get(DataComponents.ENCHANTMENTS);
-            if (enchants != null) {
-                for (var entry : enchants.entrySet()) {
-                    Holder<Enchantment> enchant = entry.getKey();
-                    ItemStack output = new ItemStack(Items.ENCHANTED_BOOK);
-                    if (enchant.unwrapKey().isPresent() && enchant.unwrapKey().get().location().equals(wisdom) && enchants.getLevel(enchant) == 3) {
-                        // skye fix
-                    }
-                }
-            }
+
+        if (!left.is(Items.ENCHANTED_BOOK) || !right.is(Items.ECHO_SHARD)) return;
+
+
+        HolderLookup.RegistryLookup<Enchantment> enchantsLookup =
+                event.getPlayer().level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+
+
+        Holder<Enchantment> wisdomH    = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, WISDOM_RL)).orElse(null);
+        Holder<Enchantment> advWisdomH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, ADV_WISDOM_RL)).orElse(null);
+        if (wisdomH == null || advWisdomH == null) return;
+
+
+        ItemEnchantments stored = left.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY);
+
+
+        if (stored.getLevel(wisdomH) == 3) {
+
+            ItemEnchantments.Mutable mut = new ItemEnchantments.Mutable(stored);
+            mut.set(wisdomH, 0);
+            mut.set(advWisdomH, 1);
+
+            mut.set(advWisdomH, 1);
+
+            ItemStack output = new ItemStack(Items.ENCHANTED_BOOK);
+            output.set(DataComponents.STORED_ENCHANTMENTS, mut.toImmutable());
+
+            
+            var name = left.get(DataComponents.CUSTOM_NAME);
+            if (name != null) output.set(DataComponents.CUSTOM_NAME, name.copy());
+
+            event.setOutput(output);
+            event.setCost(5);
+            event.setMaterialCost(1);
         }
     }
 }
