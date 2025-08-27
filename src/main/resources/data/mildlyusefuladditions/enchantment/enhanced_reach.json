@@ -6,7 +6,7 @@
 
   "min_cost": { "base": 20, "per_level_above_first": 9 },
   "max_cost": { "base": 75, "per_level_above_first": 9 },
-  "anvil_cost": 16,
+  "anvil_cost": 5,
 
   "slots": ["mainhand"],
 

@@ -3,6 +3,18 @@
   "values": [
     "mildlyusefuladditions:bulwark",
     "mildlyusefuladditions:perfected_bulwark",
-    "mildlyusefuladditions:enhanced_bulwark"
+    "mildlyusefuladditions:enhanced_bulwark",
+    "mildlyusefuladditions:multi_carver",
+    "mildlyusefuladditions:sleight",
+    "mildlyusefuladditions:tunneling",
+    "mildlyusefuladditions:strip_tunneling",
+    "mildlyusefuladditions:reach",
+    "mildlyusefuladditions:replenish",
+    "mildlyusefuladditions:scope",
+    "mildlyusefuladditions:bulwark",
+    "mildlyusefuladditions:clearance",
+    "mildlyusefuladditions:leap",
+    "mildlyusefuladditions:legwork",
+    "mildlyusefuladditions:vein_mining"
   ]
 }

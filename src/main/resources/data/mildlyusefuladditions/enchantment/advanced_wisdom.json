@@ -1,5 +1,5 @@
 {
-  "anvil_cost": 25,
+  "anvil_cost": 10,
   "description": {
     "translate": "enchantment.mildlyusefuladditions.enhanced_wisdom"
   },
@@ -9,7 +9,7 @@
   },
   "max_level": 3,
   "min_cost": {
-    "base": 30,
+    "base": 27,
     "per_level_above_first": 8
   },
   "supported_items": "#mildlyusefuladditions:enchantable/reach_tools",

@@ -311,36 +311,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:stored_enchantments": {
-                  "mildlyusefuladditions:enhanced_fortune": 4
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:stored_enchantments": {
-                  "mildlyusefuladditions:enhanced_fortune": 5
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
           "weight": 5,
           "functions": [
             {
@@ -378,36 +348,6 @@
               "components": {
                 "minecraft:stored_enchantments": {
                   "mildlyusefuladditions:perfected_fortune": 3
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:stored_enchantments": {
-                  "mildlyusefuladditions:perfected_fortune": 4
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_book",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:stored_enchantments": {
-                  "mildlyusefuladditions:perfected_fortune": 5
                 }
               }
             }
