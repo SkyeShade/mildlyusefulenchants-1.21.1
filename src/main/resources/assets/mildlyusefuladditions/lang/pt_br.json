@@ -27,6 +27,7 @@
   "enchantment.mildlyusefuladditions.rotten_smite": "Julgamento dos Apodrecidos",
   "enchantment.mildlyusefuladditions.withered_smite": "Julgamento dos Decompostos",
   "enchantment.mildlyusefuladditions.wisdom": "Sabedoria",
+  "enchantment.mildlyusefuladditions.freeze_aspect": "Aspecto Congelante",
 
   "enchantment.mildlyusefuladditions.enhanced_bane_of_arthropods": "Ruína dos Artrópodes Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_bane_of_raiding": "Ruína dos Invasores Aprimorada",
@@ -45,6 +46,7 @@
   "enchantment.mildlyusefuladditions.enhanced_footwork": "Passos Rápidos Aprimorados",
   "enchantment.mildlyusefuladditions.enhanced_fortune": "Fortuna Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_frost_walker": "Passos Gélidos Aprimorados",
+  "enchantment.mildlyusefuladditions.enhanced_freeze_aspect": "Aspecto Congelante Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_impaling": "Empalamento Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_knockback": "Repulsão Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_leap": "Salto Alto Aprimorado",
@@ -90,6 +92,7 @@
   "enchantment.mildlyusefuladditions.perfected_fire_protection": "Proteção Contra Fogo Perfeita",
   "enchantment.mildlyusefuladditions.perfected_footwork": "Passos Rápidos Perfeitos",
   "enchantment.mildlyusefuladditions.perfected_fortune": "Fortuna Perfeita",
+  "enchantment.mildlyusefuladditions.perfected_freeze_aspect": "Aspecto Congelante Perfeito",
   "enchantment.mildlyusefuladditions.perfected_frost_walker": "Passos Gélidos Perfeitos",
   "enchantment.mildlyusefuladditions.perfected_impaling": "Empalamento Perfeito",
   "enchantment.mildlyusefuladditions.perfected_knockback": "Repulsão Perfeita",
@@ -138,6 +141,7 @@
   "enchantment.mildlyusefuladditions.rotten_smite.desc": "Causa dano adicional a todos os mobs zumbis.",
   "enchantment.mildlyusefuladditions.withered_smite.desc": "Causa dano adicional a todos os mobs esqueletos.",
   "enchantment.mildlyusefuladditions.wisdom.desc": "Aumenta ligeiramente o EXP ganho de Mobs e Minérios.",
+  "enchantment.mildlyusefuladditions.freeze_aspect.desc": "Causa dano adicional de frio ao atacar um mob.",
 
   "enchantment.minecraft.sharpness.desc": "Aumenta o dano da arma.",
 
@@ -157,6 +161,7 @@
   "enchantment.mildlyusefuladditions.enhanced_fire_protection.desc": "Reduz ainda mais os efeitos do dano de fogo. Também reduz levemente o tempo em chamas ao ser incendiado.",
   "enchantment.mildlyusefuladditions.enhanced_footwork.desc": "Aumenta ainda mais sua velocidade de movimento.",
   "enchantment.mildlyusefuladditions.enhanced_fortune.desc": "Alguns blocos como carvão e minério de diamante podem dropar um pouco mais de itens adicionais.",
+  "enchantment.mildlyusefuladditions.enhanced_freeze_aspect.desc": "Causa um pouco mais de dano adicional de frio ao atacar um mob.",
   "enchantment.mildlyusefuladditions.enhanced_frost_walker.desc": "Estende o raio onde a água sob o jogador congela em gelo instável.",
   "enchantment.mildlyusefuladditions.enhanced_impaling.desc": "Aumenta ainda mais o dano contra mobs aquáticos.",
   "enchantment.mildlyusefuladditions.enhanced_knockback.desc": "Aumenta ainda mais a força do recuo da arma.",
@@ -203,6 +208,7 @@
   "enchantment.mildlyusefuladditions.perfected_fire_protection.desc": "Reduz muito os efeitos do dano de fogo e diminui significativamente o tempo em chamas ao ser incendiado.",
   "enchantment.mildlyusefuladditions.perfected_footwork.desc": "Aumenta muito sua velocidade de movimento.",
   "enchantment.mildlyusefuladditions.perfected_fortune.desc": "Blocos como carvão e minério de diamante podem dropar muito mais itens adicionais.",
+  "enchantment.mildlyusefuladditions.perfected_freeze_aspect.desc": "Causa muito mais dano adicional de frio ao atacar um mob.",
   "enchantment.mildlyusefuladditions.perfected_frost_walker.desc": "Estende significativamente o raio onde a água sob o jogador congela em gelo instável.",
   "enchantment.mildlyusefuladditions.perfected_impaling.desc": "Aumenta muito o dano contra mobs aquáticos.",
   "enchantment.mildlyusefuladditions.perfected_knockback.desc": "Aumenta muito a força do recuo da arma.",

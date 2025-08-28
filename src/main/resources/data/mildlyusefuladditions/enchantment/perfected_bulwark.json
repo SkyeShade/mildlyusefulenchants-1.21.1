@@ -1,7 +1,7 @@
 {
-	"description": { "translate": "enchantment.mildlyusefuladditions.bulwark" },
-	"supported_items": "#minecraft:enchantable/equippable",
-	"slots": ["armor"],
+  "description": { "translate": "enchantment.mildlyusefuladditions.perfected_bulwark" },
+  "supported_items": "#minecraft:enchantable/equippable",
+  "slots": ["armor"],
   "exclusive_set": "#mildlyusefuladditions:exclusive_set/bulwark",
 	"weight": 1,
 	"anvil_cost": 20,

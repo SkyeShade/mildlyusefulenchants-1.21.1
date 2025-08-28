@@ -31,6 +31,7 @@
   "enchantment.mildlyusefuladditions.withered_smite": "Withered Smite",
   "enchantment.mildlyusefuladditions.rotten_smite": "Withered Smite",
   "enchantment.mildlyusefuladditions.wisdom": "Wisdom",
+  "enchantment.mildlyusefuladditions.freeze_aspect": "Freeze Aspect",
 
   "enchantment.mildlyusefuladditions.enhanced_bane_of_arthropods": "Enhanced Bane of Arthropods",
   "enchantment.mildlyusefuladditions.enhanced_bane_of_raiding": "Enhanced Bane of Raiding",
@@ -47,6 +48,7 @@
   "enchantment.mildlyusefuladditions.enhanced_fire_protection": "Enhanced Fire Protection",
   "enchantment.mildlyusefuladditions.enhanced_footwork": "Enhanced Footwork",
   "enchantment.mildlyusefuladditions.enhanced_fortune": "Enhanced Fortune",
+  "enchantment.mildlyusefuladditions.enhanced_freeze_aspect": "Freeze Aspect",
   "enchantment.mildlyusefuladditions.enhanced_frost_walker": "Enhanced Frost Walker",
   "enchantment.mildlyusefuladditions.enhanced_impaling": "Enhanced Impaling",
   "enchantment.mildlyusefuladditions.enhanced_knockback": "Enhanced Knockback",
@@ -93,6 +95,7 @@
   "enchantment.mildlyusefuladditions.perfected_fire_protection": "Perfected Fire Protection",
   "enchantment.mildlyusefuladditions.perfected_footwork": "Perfected Footwork",
   "enchantment.mildlyusefuladditions.perfected_fortune": "Perfected Fortune",
+  "enchantment.mildlyusefuladditions.perfected_freeze_aspect": "Freeze Aspect",
   "enchantment.mildlyusefuladditions.perfected_frost_walker": "Perfected Frost Walker",
   "enchantment.mildlyusefuladditions.perfected_impaling": "Perfected Impaling",
   "enchantment.mildlyusefuladditions.perfected_knockback": "Perfected Knockback",
@@ -142,6 +145,7 @@
   "enchantment.mildlyusefuladditions.rotten_smite.desc": "Deals  additional damage to all zombie mobs.",
   "enchantment.mildlyusefuladditions.withered_smite.desc": "Deals additional damage to all skeletal mobs.",
   "enchantment.mildlyusefuladditions.wisdom.desc": "Slightly increases the XP gain from Mobs and Ores.",
+  "enchantment.mildlyusefuladditions.freeze_aspect.desc": "Causes additional freeze damage when used to attack a mob.",
 
   "enchantment.minecraft.sharpness.desc": "Increases the damage of the weapon.",
 
@@ -161,6 +165,7 @@
   "enchantment.mildlyusefuladditions.enhanced_fire_protection.desc": "Further reduces the effects of fire damage. Also reduces even more slightly the burn time when set on fire.",
   "enchantment.mildlyusefuladditions.enhanced_footwork.desc": "Further increases your movement speed.",
   "enchantment.mildlyusefuladditions.enhanced_fortune.desc": "Some blocks like coal and diamond ore may drop slightly more additional items.",
+  "enchantment.mildlyusefuladditions.enhanced_freeze_aspect.desc": "Causes slightly more additional freeze damage when used to attack a mob.",
   "enchantment.mildlyusefuladditions.enhanced_frost_walker.desc": "Extends the radius where water under the user will freeze onto frosted ice.",
   "enchantment.mildlyusefuladditions.enhanced_impaling.desc": "Further increases damage to aquatic mobs.",
   "enchantment.mildlyusefuladditions.enhanced_knockback.desc": "Further increases the knockback strength of the weapon.",
@@ -207,6 +212,7 @@
   "enchantment.mildlyusefuladditions.perfected_fire_protection.desc": "Greatly reduces the effects of fire damage and significantly reduces burn time when set on fire.",
   "enchantment.mildlyusefuladditions.perfected_footwork.desc": "Greatly increases your movement speed.",
   "enchantment.mildlyusefuladditions.perfected_fortune.desc": "Blocks like coal and diamond ore may drop much more additional items.",
+  "enchantment.mildlyusefuladditions.perfected_freeze_aspect.desc": "Causes slightly more additional freeze damage when used to attack a mob.",
   "enchantment.mildlyusefuladditions.perfected_frost_walker.desc": "Significantly extends the radius where water under the user will freeze onto frosted ice.",
   "enchantment.mildlyusefuladditions.perfected_impaling.desc": "Greatly increases damage to aquatic mobs.",
   "enchantment.mildlyusefuladditions.perfected_knockback.desc": "Greatly increases the knockback strength of the weapon.",
