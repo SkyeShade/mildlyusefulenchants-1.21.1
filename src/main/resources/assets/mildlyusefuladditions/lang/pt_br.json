@@ -28,6 +28,7 @@
   "enchantment.mildlyusefuladditions.withered_smite": "Julgamento dos Decompostos",
   "enchantment.mildlyusefuladditions.wisdom": "Sabedoria",
   "enchantment.mildlyusefuladditions.freeze_aspect": "Aspecto Congelante",
+  "enchantment.mildlyusefuladditions.wither_aspect": "Aspecto de Decomposição",
 
   "enchantment.mildlyusefuladditions.enhanced_bane_of_arthropods": "Ruína dos Artrópodes Aprimorada",
   "enchantment.mildlyusefuladditions.enhanced_bane_of_raiding": "Ruína dos Invasores Aprimorada",
@@ -75,6 +76,7 @@
   "enchantment.mildlyusefuladditions.enhanced_unbreaking": "Inquebrável Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite": "Julgamento dos Decompostos Aprimorado",
   "enchantment.mildlyusefuladditions.enhanced_wisdom": "Sabedoria Avançada",
+  "enchantment.mildlyusefuladditions.enhanced_wither_aspect": "Aspecto de Decomposição Aprimorado",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods": "Ruína dos Artrópodes Perfeita",
   "enchantment.mildlyusefuladditions.perfected_bane_of_raiding": "Ruína dos Invasores Perfeita",
@@ -121,6 +123,7 @@
   "enchantment.mildlyusefuladditions.perfected_unbreaking": "Inquebrável Perfeito",
   "enchantment.mildlyusefuladditions.perfected_withered_smite": "Julgamento dos Decompostos Perfeito",
   "enchantment.mildlyusefuladditions.perfected_wisdom": "Sabedoria Mestra",
+  "enchantment.mildlyusefuladditions.perfected_wither_aspect": "Aspecto de Decomposição Perfeito",
 
   "enchantment.mildlyusefuladditions.bane_of_raiding.desc": "Aumenta o dano contra mobs Invasores como Vindicadores e Bruxas.",
   "enchantment.mildlyusefuladditions.bane_of_slime.desc": "Aumenta o dano contra Slimes e Cubos de Magma.",
@@ -142,6 +145,7 @@
   "enchantment.mildlyusefuladditions.withered_smite.desc": "Causa dano adicional a todos os mobs esqueletos.",
   "enchantment.mildlyusefuladditions.wisdom.desc": "Aumenta ligeiramente o EXP ganho de Mobs e Minérios.",
   "enchantment.mildlyusefuladditions.freeze_aspect.desc": "Causa dano adicional de frio ao atacar um mob.",
+  "enchantment.mildlyusefuladditions.wither_aspect.desc": "Causa dano adicional de decomposição ao atacar um mob.",
 
   "enchantment.minecraft.sharpness.desc": "Aumenta o dano da arma.",
 
@@ -190,6 +194,7 @@
   "enchantment.mildlyusefuladditions.enhanced_swift_sneak.desc": "Aumenta ainda mais a velocidade de movimento ao se agachar.",
   "enchantment.mildlyusefuladditions.enhanced_unbreaking.desc": "Reduz ainda mais a perda de durabilidade da ferramenta.",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite.desc": "Causa um pouco mais de dano adicional a todos os mobs esqueletos.",
+  "enchantment.mildlyusefuladditions.enhanced_wither_aspect.desc": "Causa um pouco mais dano adicional de decomposição ao atacar um mob.",
   "enchantment.mildlyusefuladditions.enhanced_wisdom.desc": "Aumenta ainda mais o EXP ganho de Mobs e Minérios.",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods.desc": "Aumenta muito o dano contra artrópodes como Aranhas e Traças.",
@@ -237,11 +242,24 @@
   "enchantment.mildlyusefuladditions.perfected_swift_sneak.desc": "Aumenta muito a velocidade de movimento ao se agachar.",
   "enchantment.mildlyusefuladditions.perfected_unbreaking.desc": "Reduz muito a perda de durabilidade da ferramenta.",
   "enchantment.mildlyusefuladditions.perfected_withered_smite.desc": "Causa muito mais dano adicional a todos os mobs esqueletos.",
+  "enchantment.mildlyusefuladditions.perfected_wither_aspect.desc": "Causa muito mais dano adicional de decomposição ao atacar um mob.",
   "enchantment.mildlyusefuladditions.perfected_wisdom.desc": "Aumenta muito o EXP ganho de Mobs e Minérios.",
 
   "item.mildlyusefuladditions.long_bow": "Arco Longo",
   "item.mildlyusefuladditions.pipe_bomb": "Bomba Caseira",
   "item.mildlyusefuladditions.staff": "Cajado",
+  "item.mildlyusefuladditions.wooden_halberd": "Alabarda de Madeira",
+  "item.mildlyusefuladditions.wooden_spear": "Lança de Madeira",
+  "item.mildlyusefuladditions.stone_halberd": "Alabarda de Pedra",
+  "item.mildlyusefuladditions.stone_spear": "Lança de Pedra",
+  "item.mildlyusefuladditions.iron_halberd": "Alabarda de Ferro",
+  "item.mildlyusefuladditions.iron_spear": "Lança de Ferro",
+  "item.mildlyusefuladditions.golden_halberd": "Alabarda de Ouro",
+  "item.mildlyusefuladditions.golden_spear": "Lança de Ouro",
+  "item.mildlyusefuladditions.diamond_halberd": "Alabarda de Diamante",
+  "item.mildlyusefuladditions.diamond_spear": "Lança de Diamante",
+  "item.mildlyusefuladditions.netherite_halberd": "Alabarda de Netherite",
+  "item.mildlyusefuladditions.netherite_spear": "Lança de Netherite",
 
   "item.minecraft.tipped_arrow.effect.nausea": "Flecha de Náusea",
   "item.minecraft.tipped_arrow.effect.long_nausea": "Flecha de Náusea",

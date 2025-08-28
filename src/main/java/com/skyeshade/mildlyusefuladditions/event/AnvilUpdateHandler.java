@@ -214,7 +214,6 @@ public class AnvilUpdateHandler {
         HolderLookup.RegistryLookup<Enchantment> enchantsLookup =
                 event.getPlayer().level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-
         // Holders for bane_of_arthropods
         Holder<Enchantment> baneofarthropodsH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, BANE_OF_ARTHROPODS_RL)).orElse(null);
         Holder<Enchantment> enhBaneofarthropodsH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, ENH_BANE_OF_ARTHROPODS_RL)).orElse(null);

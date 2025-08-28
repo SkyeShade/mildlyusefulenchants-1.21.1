@@ -32,6 +32,7 @@
   "enchantment.mildlyusefuladditions.rotten_smite": "Withered Smite",
   "enchantment.mildlyusefuladditions.wisdom": "Wisdom",
   "enchantment.mildlyusefuladditions.freeze_aspect": "Freeze Aspect",
+  "enchantment.mildlyusefuladditions.wither_aspect": "Wither Aspect",
 
   "enchantment.mildlyusefuladditions.enhanced_bane_of_arthropods": "Enhanced Bane of Arthropods",
   "enchantment.mildlyusefuladditions.enhanced_bane_of_raiding": "Enhanced Bane of Raiding",
@@ -78,6 +79,7 @@
   "enchantment.mildlyusefuladditions.enhanced_swift_sneak": "Enhanced Swift Sneak",
   "enchantment.mildlyusefuladditions.enhanced_unbreaking": "Enhanced Unbreaking",
   "enchantment.mildlyusefuladditions.enhanced_withered_smite": "Enhanced Withered Smite",
+  "enchantment.mildlyusefuladditions.enhanced_wither_aspect": "Enhanced Wither Aspect",
   "enchantment.mildlyusefuladditions.enhanced_wisdom": "Advanced Wisdom",
 
   "enchantment.mildlyusefuladditions.perfected_bane_of_arthropods": "Perfected Bane of Arthropods",
@@ -124,6 +126,7 @@
   "enchantment.mildlyusefuladditions.perfected_swift_sneak": "Perfected Swift Sneak",
   "enchantment.mildlyusefuladditions.perfected_unbreaking": "Perfected Unbreaking",
   "enchantment.mildlyusefuladditions.perfected_withered_smite": "Perfected Withered Smite",
+  "enchantment.mildlyusefuladditions.perfected_wither_aspect": "Wither Aspect",
   "enchantment.mildlyusefuladditions.perfected_wisdom": "Masterful Wisdom",
 
   "enchantment.mildlyusefuladditions.bane_of_raiding.desc": "Increases damage against Raider mobs such as Vindicators and Witches.",
@@ -146,6 +149,7 @@
   "enchantment.mildlyusefuladditions.withered_smite.desc": "Deals additional damage to all skeletal mobs.",
   "enchantment.mildlyusefuladditions.wisdom.desc": "Slightly increases the XP gain from Mobs and Ores.",
   "enchantment.mildlyusefuladditions.freeze_aspect.desc": "Causes additional freeze damage when used to attack a mob.",
+  "enchantment.mildlyusefuladditions.wither_aspect.desc": "Causes additional wither damage when used to attack a mob.",
 
   "enchantment.minecraft.sharpness.desc": "Increases the damage of the weapon.",
 
@@ -246,6 +250,19 @@
   "item.mildlyusefuladditions.long_bow": "Long Bow",
   "item.mildlyusefuladditions.pipe_bomb": "Pipe Bomb",
   "item.mildlyusefuladditions.staff": "Staff",
+  "item.mildlyusefuladditions.wooden_halberd": "Wooden Halberd",
+  "item.mildlyusefuladditions.wooden_spear": "Wooden Spear",
+  "item.mildlyusefuladditions.stone_halberd": "Stone Halberd",
+  "item.mildlyusefuladditions.stone_spear": "Stone Spear",
+  "item.mildlyusefuladditions.iron_halberd": "Iron Halberd",
+  "item.mildlyusefuladditions.iron_spear": "Iron Spear",
+  "item.mildlyusefuladditions.golden_halberd": "Golden Halberd",
+  "item.mildlyusefuladditions.golden_spear": "Golden Spear",
+  "item.mildlyusefuladditions.diamond_halberd": "Diamond Halberd",
+  "item.mildlyusefuladditions.diamond_spear": "Diamond Spear",
+  "item.mildlyusefuladditions.netherite_halberd": "Netherite Halberd",
+  "item.mildlyusefuladditions.netherite_spear": "Netherite Spear",
+
 
   "item.minecraft.tipped_arrow.effect.nausea": "Arrow of Nausea",
   "item.minecraft.tipped_arrow.effect.long_nausea": "Arrow of Nausea",
