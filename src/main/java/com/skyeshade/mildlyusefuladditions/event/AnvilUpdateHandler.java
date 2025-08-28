@@ -136,7 +136,7 @@ public class AnvilUpdateHandler {
 
     static final ResourceLocation PROTECTION_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "protection");
     static final ResourceLocation ENH_PROTECTION_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_protection");
-    static final ResourceLocation PER_PROTECTION_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_protection");
+    //static final ResourceLocation PER_PROTECTION_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_protection");
 
     static final ResourceLocation PUNCH_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "punch");
     static final ResourceLocation ENH_PUNCH_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_punch");
@@ -146,7 +146,7 @@ public class AnvilUpdateHandler {
     static final ResourceLocation ENH_QUICK_CHARGE_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_quick_charge");
     static final ResourceLocation PER_QUICK_CHARGE_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_quick_charge");
 
-    static final ResourceLocation REACH_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "reach");
+    static final ResourceLocation REACH_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "reach");
     static final ResourceLocation ENH_REACH_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_reach");
     static final ResourceLocation PER_REACH_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_reach");
 
@@ -170,7 +170,7 @@ public class AnvilUpdateHandler {
     static final ResourceLocation ENH_SHARPNESS_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_sharpness");
     static final ResourceLocation PER_SHARPNESS_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_sharpness");
 
-    static final ResourceLocation SLEIGHT_RL = ResourceLocation.fromNamespaceAndPath("minecraft", "sleight");
+    static final ResourceLocation SLEIGHT_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "sleight");
     static final ResourceLocation ENH_SLEIGHT_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "enhanced_sleight");
     static final ResourceLocation PER_SLEIGHT_RL = ResourceLocation.fromNamespaceAndPath(MildlyUsefulAdditions.MODID, "perfected_sleight");
 
@@ -357,7 +357,7 @@ public class AnvilUpdateHandler {
         // Holders for protection
         Holder<Enchantment> protectionH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, PROTECTION_RL)).orElse(null);
         Holder<Enchantment> enhProtectionH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, ENH_PROTECTION_RL)).orElse(null);
-        Holder<Enchantment> perProtectionH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, PER_PROTECTION_RL)).orElse(null);
+        //Holder<Enchantment> perProtectionH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, PER_PROTECTION_RL)).orElse(null);
 
         // Holders for punch
         Holder<Enchantment> punchH = enchantsLookup.get(ResourceKey.create(Registries.ENCHANTMENT, PUNCH_RL)).orElse(null);
@@ -476,7 +476,7 @@ public class AnvilUpdateHandler {
                         piercingH == null || enhPiercingH == null || perPiercingH == null ||
                         powerH == null || enhPowerH == null || perPowerH == null ||
                         projectileprotectionH == null || enhProjectileprotectionH == null || perProjectileprotectionH == null ||
-                        protectionH == null || enhProtectionH == null || perProtectionH == null ||
+                        protectionH == null || enhProtectionH == null || /*perProtectionH == null ||*/
                         punchH == null || enhPunchH == null || perPunchH == null ||
                         quickchargeH == null || enhQuickchargeH == null || perQuickchargeH == null ||
                         reachH == null || enhReachH == null || perReachH == null ||
