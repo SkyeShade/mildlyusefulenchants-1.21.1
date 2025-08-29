@@ -15,8 +15,8 @@ public class HalberdItem extends AxeItem {
 
 
     public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> enchantment) {
-        if (enchantment.is(Enchantments.BREACH)) {
-            return true;
+        if (enchantment.is(Enchantments.DENSITY)) {
+            return false;
         }
         return super.supportsEnchantment(stack, enchantment);
     }

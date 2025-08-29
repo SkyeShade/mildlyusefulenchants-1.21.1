@@ -38,6 +38,6 @@
     "mainhand"
   ],
   "exclusive_set": "#mildlyusefuladditions:exclusive_set/looting",
-  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "supported_items": "#minecraft:enchantable/weapon",
   "weight": 1
 }
