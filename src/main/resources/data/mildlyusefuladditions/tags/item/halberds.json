@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "mildlyusefuladditions:wooden_halberd",
+    "mildlyusefuladditions:stone_halberd",
+    "mildlyusefuladditions:iron_halberd",
+    "mildlyusefuladditions:golden_halberd",
+    "mildlyusefuladditions:diamond_halberd",
+    "mildlyusefuladditions:netherite_halberd"
+  ]
+}

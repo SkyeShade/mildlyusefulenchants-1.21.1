@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:enchantable/weapon",
+    "#minecraft:enchantable/sharp_weapon",
+    "#minecraft:enchantable/trident",
+    "#mildlyusefuladditions:halberds",
+    "#mildlyusefuladditions:spears"
+  ]
+}

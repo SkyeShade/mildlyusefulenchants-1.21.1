@@ -31,7 +31,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> STAFF = ITEMS.register("staff",
             () -> new Staff(new Item.Properties().durability(235)));
 
-    public static final DeferredHolder<Item, AxeItem> WOOD_HALBERD = ITEMS.register("wooden_halberd",
+    public static final DeferredHolder<Item, AxeItem> WOODEN_HALBERD = ITEMS.register("wooden_halberd",
             () -> new AxeItem(Tiers.WOOD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.WOOD, 9.0F, -3.6F)))
     );
     public static final DeferredHolder<Item, AxeItem> STONE_HALBERD = ITEMS.register("stone_halberd",
@@ -50,8 +50,8 @@ public class ModItems {
             () -> new AxeItem(Tiers.NETHERITE,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.NETHERITE, 13.0F, -3.6F)))
     );
 
-    public static final DeferredHolder<Item, SwordItem> WOOD_SPEAR = ITEMS.register("wooden_spear",
-            () -> new SwordItem(Tiers.WOOD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.WOOD, 2.0F, -2.6F)))
+    public static final DeferredHolder<Item, SwordItem> WOODEN_SPEAR = ITEMS.register("wooden_spear",
+            () -> new SwordItem(Tiers.WOOD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.WOOD, 2.0F, -2.0F)))
     );
     public static final DeferredHolder<Item, SwordItem> STONE_SPEAR = ITEMS.register("stone_spear",
             () -> new SwordItem(Tiers.STONE,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.STONE, 3.0F, -2.6F)))
@@ -60,7 +60,7 @@ public class ModItems {
             () -> new SwordItem(Tiers.IRON,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.IRON, 4.0F, -2.6F)))
     );
     public static final DeferredHolder<Item, SwordItem> GOLD_SPEAR = ITEMS.register("golden_spear",
-            () -> new SwordItem(Tiers.GOLD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.GOLD, 3.0F, -2.6F)))
+            () -> new SwordItem(Tiers.GOLD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.GOLD, 3.0F, -1.3F)))
     );
     public static final DeferredHolder<Item, SwordItem> DIAMOND_SPEAR = ITEMS.register("diamond_spear",
             () -> new SwordItem(Tiers.DIAMOND,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.DIAMOND, 5.0F, -2.6F)))

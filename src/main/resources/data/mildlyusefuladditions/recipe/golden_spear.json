@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MMM",
+    "MSM",
+    "MS "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "minecraft:golden_ingot"
+    }
+  },
+  "result": {
+    "id": "mildlyusefuladditions:golden_spear",
+    "count": 1
+  }
+}

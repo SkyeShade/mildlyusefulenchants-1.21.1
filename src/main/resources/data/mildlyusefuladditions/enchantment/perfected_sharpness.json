@@ -1,7 +1,7 @@
 {
   "anvil_cost": 10,
   "description": {
-    "translate": "enchantment.mildlyusefuladditions.enhanced_sharpness"
+    "translate": "enchantment.mildlyusefuladditions.perfected_sharpness"
   },
   "effects": {
     "minecraft:damage": [

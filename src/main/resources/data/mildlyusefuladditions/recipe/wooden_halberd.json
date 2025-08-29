@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MMM",
+    "MSM",
+    "MS "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "mildlyusefuladditions:stone_halberd",
+    "count": 1
+  }
+}
