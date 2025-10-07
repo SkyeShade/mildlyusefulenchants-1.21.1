@@ -18,7 +18,7 @@ public final class ModCreativeModeTabs {
             event.insertAfter(Items.BOW.getDefaultInstance(), ModItems.LONG_BOW.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
             event.insertAfter(Items.WIND_CHARGE.getDefaultInstance(), ModItems.PIPE_BOMB.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
             event.insertAfter(Items.TNT.getDefaultInstance(), ModItems.IMPROVISED_EXPLOSIVE.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
-            event.insertAfter(Items.MACE.getDefaultInstance(), ModItems.STAFF.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
+            //event.insertAfter(Items.MACE.getDefaultInstance(), ModItems.STAFF.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
         }
         if (event.getTabKey().equals(CreativeModeTabs.REDSTONE_BLOCKS)) {
 
