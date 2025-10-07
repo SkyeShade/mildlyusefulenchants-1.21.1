@@ -12,13 +12,6 @@ public final class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES =
             DeferredRegister.create(Registries.ENTITY_TYPE, MildlyUsefulAdditions.MODID);
 
-    public static final DeferredHolder<EntityType<?>, EntityType<LongBowArrow>> LONG_BOW_ARROW =
-            ENTITIES.register("long_bow_arrow",
-                    () -> EntityType.Builder.<LongBowArrow>of(LongBowArrow::new, MobCategory.MISC)
-                            .sized(0.5F, 0.5F)
-                            .clientTrackingRange(4)
-                            .updateInterval(20)
-                            .build(MildlyUsefulAdditions.MODID + ":long_bow_arrow"));
 
     public static final DeferredHolder<EntityType<?>, EntityType<PrimedExplosive>> PRIMED_EXPLOSIVE =
             ENTITIES.register("primed_explosive",

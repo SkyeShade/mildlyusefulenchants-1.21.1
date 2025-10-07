@@ -1,13 +1,10 @@
 package com.skyeshade.mildlyusefuladditions;
 
-import com.skyeshade.mildlyusefuladditions.client.render.LongBowArrowRenderer;
 import com.skyeshade.mildlyusefuladditions.client.render.PrimedExplosiveRenderer;
 import com.skyeshade.mildlyusefuladditions.entity.ModEntities;
 import com.skyeshade.mildlyusefuladditions.item.ModItems;
 import com.skyeshade.mildlyusefuladditions.item.custom.LongBow;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -34,7 +31,7 @@ public class MildlyUsefulAdditionsClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        EntityRenderers.register(ModEntities.LONG_BOW_ARROW.get(), LongBowArrowRenderer::new);
+
         // Some client setup code
         EntityRenderers.register(ModEntities.PRIMED_EXPLOSIVE.get(), PrimedExplosiveRenderer::new);
         registerItemProperties();
