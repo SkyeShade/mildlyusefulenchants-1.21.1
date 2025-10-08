@@ -16,6 +16,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 
+
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -27,6 +28,7 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
 
 import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
@@ -62,7 +64,7 @@ public class ThrownSpear extends AbstractArrow {
         this.entityData.set(DATA_RENDER_STACK, weaponStack.copy());
         this.entityData.set(ID_LOYALTY, getLoyaltyFromItem(weaponStack));
         this.entityData.set(ID_FOIL, weaponStack.hasFoil());
-        this.baseDamage = computeBaseDamageFromStack(weaponStack);
+        this.damage = computeAttackFromStack(weaponStack);
     }
 
 
@@ -77,39 +79,43 @@ public class ThrownSpear extends AbstractArrow {
         this.entityData.set(DATA_RENDER_STACK, weaponStack.copy());
         this.entityData.set(ID_LOYALTY, getLoyaltyFromItem(weaponStack));
         this.entityData.set(ID_FOIL, weaponStack.hasFoil());
-        this.baseDamage = computeBaseDamageFromStack(weaponStack);
+        this.damage = computeAttackFromStack(weaponStack);
+
+        System.out.println("[SPEAR] snap=" + this.damage + " item=" + weaponStack);
+
     }
 
-
-
-    private static float computeBaseDamageFromStack(ItemStack stack) {
-
+    private static float computeAttackFromStack(ItemStack stack) {
         double base = 1.0;
-        var attrs = stack.get(DataComponents.ATTRIBUTE_MODIFIERS);
-        if (attrs != null) {
+        double add = 0.0, mulBase = 0.0, mulTotal = 0.0;
 
-            for (var entry : attrs.modifiers()) {
+        ItemAttributeModifiers mods = stack.getOrDefault(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.EMPTY);
+        for (var entry : mods.modifiers()) {
 
-                var attrHolder = entry.attribute();
-                if (attrHolder.value() == Attributes.ATTACK_DAMAGE &&
-                        entry.slot().test(EquipmentSlot.MAINHAND)) {
+            if (!entry.slot().test(EquipmentSlot.MAINHAND)) continue;
 
-                    var mod = entry.modifier();
 
-                    if (mod.operation() == AttributeModifier.Operation.ADD_VALUE) {
-                        base += mod.amount();
-                    }
-                }
+            if (!entry.attribute().is(Attributes.ATTACK_DAMAGE)) continue;
+
+            AttributeModifier m = entry.modifier();
+            switch (m.operation()) {
+                case ADD_VALUE -> add += m.amount();
+                case ADD_MULTIPLIED_BASE -> mulBase += m.amount();
+                case ADD_MULTIPLIED_TOTAL -> mulTotal += m.amount();
             }
-            return (float)base;
         }
 
+        double result = (base + add) * (1.0 + mulBase) * (1.0 + mulTotal);
 
-        if (stack.getItem() instanceof TieredItem ti) {
-            return (float)(1.0 + 4.0 + ti.getTier().getAttackDamageBonus());
+
+        if (result == 1.0 && stack.getItem() instanceof TieredItem ti) {
+            result = 1.0 + 4.0 + ti.getTier().getAttackDamageBonus();
         }
-        return 6.0F;
+        return (float)result;
     }
+
+
+
 
 
     @Override
@@ -121,24 +127,13 @@ public class ThrownSpear extends AbstractArrow {
     }
 
     public boolean isFoil() { return this.entityData.get(ID_FOIL); }
-    private boolean snapshotted = false;
+
     @Override
     public void tick() {
         if (this.inGroundTime > 4) this.dealtDamage = true;
 
 
-        if (!this.level().isClientSide) {
 
-            if (!snapshotted) {
-                float frozen = this.damage;
-                if (getOwner() instanceof Player p) {
-
-                    frozen = (float) p.getAttributeValue(Attributes.ATTACK_DAMAGE);
-                }
-                this.damage = frozen;
-                snapshotted = true;
-            }
-        }
         Entity owner = this.getOwner();
         int loyalty  = this.entityData.get(ID_LOYALTY);
         if (loyalty > 0 && (this.dealtDamage || this.isNoPhysics()) && owner != null) {
@@ -167,6 +162,9 @@ public class ThrownSpear extends AbstractArrow {
     protected @Nullable EntityHitResult findHitEntity(Vec3 start, Vec3 end) {
         return super.findHitEntity(start, end);
     }
+    public void setSnapshotDamage(float dmg) {
+        this.damage = Math.max(0f, dmg);
+    }
 
 
 
@@ -176,31 +174,26 @@ public class ThrownSpear extends AbstractArrow {
         this.dealtDamage = true;
 
 
-        ItemStack weapon = this.getRenderStack();
-        if (weapon.isEmpty()) {
-            ItemStack origin = this.getPickupItemStackOrigin();
-            weapon = origin.isEmpty() ? ItemStack.EMPTY : origin;
-        }
-
-
+        ItemStack weapon = getWeaponItem();
+        if (weapon.isEmpty()) weapon = getPickupItemStackOrigin();
 
         Entity owner = this.getOwner();
         if (owner instanceof LivingEntity ownerLiving) {
-            DamageSource src = owner instanceof Player p ? level().damageSources().playerAttack(p) :
-                    owner != null                ? level().damageSources().mobAttack(ownerLiving) :
-                            level().damageSources().generic();
+            DamageSource src = (owner instanceof Player p)
+                    ? level().damageSources().playerAttack(p)
+                    : level().damageSources().mobAttack(ownerLiving);
 
             float finalDmg = this.damage;
+
             if (level() instanceof ServerLevel sl) {
-                finalDmg = EnchantmentHelper.modifyDamage(sl, this.getWeaponItem(), target, src, this.damage);
+                finalDmg = EnchantmentHelper.modifyDamage(sl, weapon, hit.getEntity(), src, finalDmg);
             }
 
-            target.invulnerableTime = 0;
+            hit.getEntity().invulnerableTime = 0;
 
-            if (target.hurt(src, finalDmg) && level() instanceof ServerLevel sl2) {
-                EnchantmentHelper.doPostAttackEffectsWithItemSource(sl2, target, src, this.getWeaponItem());
+            if (hit.getEntity().hurt(src, finalDmg) && level() instanceof ServerLevel sl2) {
+                EnchantmentHelper.doPostAttackEffectsWithItemSource(sl2, hit.getEntity(), src, weapon);
             }
-
         }
 
 
