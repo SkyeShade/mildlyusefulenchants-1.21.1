@@ -189,7 +189,7 @@ public class ThrownSpear extends AbstractArrow {
                 finalDmg = EnchantmentHelper.modifyDamage(sl, weapon, hit.getEntity(), src, finalDmg);
             }
 
-            hit.getEntity().invulnerableTime = 0;
+
 
             if (hit.getEntity().hurt(src, finalDmg) && level() instanceof ServerLevel sl2) {
                 EnchantmentHelper.doPostAttackEffectsWithItemSource(sl2, hit.getEntity(), src, weapon);
