@@ -24,7 +24,7 @@ public class StaffScreen extends AbstractContainerScreen<StaffMenu> {
     protected void renderBg(GuiGraphics g, float partialTick, int mouseX, int mouseY) {
         int x = (this.width - this.imageWidth) / 2;
         int y = (this.height - this.imageHeight) / 2;
-        ResourceLocation bg = this.menu.hasDoubleSpell() ? BG_DOUBLE : BG_SINGLE; // <—
+        ResourceLocation bg = this.menu.hasDoubleSpell() ? BG_DOUBLE : BG_SINGLE;
         g.blit(bg, x, y, 0, 0, this.imageWidth, this.imageHeight);
     }
 
