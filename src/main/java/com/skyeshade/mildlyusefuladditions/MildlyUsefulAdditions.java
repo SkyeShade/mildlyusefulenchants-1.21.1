@@ -7,6 +7,7 @@ import com.skyeshade.mildlyusefuladditions.datacomponents.ModDataComponents;
 import com.skyeshade.mildlyusefuladditions.entity.ModEntities;
 import com.skyeshade.mildlyusefuladditions.item.ModItems;
 import com.skyeshade.mildlyusefuladditions.loot.ModLootModifiers;
+import com.skyeshade.mildlyusefuladditions.menu.ModMenus;
 import com.skyeshade.mildlyusefuladditions.util.TickScheduler;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
@@ -53,7 +54,7 @@ public class MildlyUsefulAdditions {
         NeoForge.EVENT_BUS.register(this);
 
         ModEntities.register(modEventBus);
-
+        ModMenus.MENUS.register(modEventBus);
         ModDataComponents.register(modEventBus);
 
         ModItems.register(modEventBus);
