@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 10,
+  "description": {
+    "translate": "enchantment.mildlyusefuladditions.quickspell"
+  },
+  "max_cost": {
+    "base": 95,
+    "per_level_above_first": 8
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 27,
+    "per_level_above_first": 8
+  },
+  "supported_items": "#mildlyusefuladditions:enchantable/staff",
+  "primary_items":  "#mildlyusefuladditions:enchantable/staff",
+  "exclusive_set": "#mildlyusefuladditions:exclusive_set/staff_throw",
+  "slots": [
+    "mainhand"
+  ],
+  "weight": 1
+}
