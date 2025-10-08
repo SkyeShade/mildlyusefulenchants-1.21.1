@@ -3,6 +3,7 @@ package com.skyeshade.mildlyusefuladditions.item;
 import com.skyeshade.mildlyusefuladditions.MildlyUsefulAdditions;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -19,6 +20,12 @@ public final class ModCreativeModeTabs {
             event.insertAfter(Items.WIND_CHARGE.getDefaultInstance(), ModItems.PIPE_BOMB.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
             event.insertAfter(Items.TNT.getDefaultInstance(), ModItems.IMPROVISED_EXPLOSIVE.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
             event.insertAfter(Items.MACE.getDefaultInstance(), ModItems.STAFF.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS );
+            event.insertAfter(Items.TRIDENT.getDefaultInstance(), ModItems.WOODEN_SPEAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModItems.WOODEN_SPEAR.get().getDefaultInstance(), ModItems.STONE_SPEAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModItems.STONE_SPEAR.get().getDefaultInstance(), ModItems.IRON_SPEAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModItems.IRON_SPEAR.get().getDefaultInstance(), ModItems.GOLD_SPEAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModItems.GOLD_SPEAR.get().getDefaultInstance(), ModItems.DIAMOND_SPEAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModItems.DIAMOND_SPEAR.get().getDefaultInstance(), ModItems.NETHERITE_SPEAR.get().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
         if (event.getTabKey().equals(CreativeModeTabs.REDSTONE_BLOCKS)) {
 

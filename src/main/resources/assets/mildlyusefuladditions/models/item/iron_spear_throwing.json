@@ -1,0 +1,8 @@
+{
+	"format_version": "1.21.1",
+	"credit": "Made with Blockbench",
+	"parent": "mildlyusefuladditions:item/wooden_spear_throwing",
+	"textures": {
+		"layer0": "mildlyusefuladditions:item/iron_spear"
+	}
+}

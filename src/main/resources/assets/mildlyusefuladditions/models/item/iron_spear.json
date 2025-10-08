@@ -1,47 +1,13 @@
 {
-  "format_version": "1.21.1",
-  "credit": "Made with Blockbench",
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "mildlyusefuladditions:item/iron_spear"
-  },
-  "display": {
-    "thirdperson_righthand": {
-      "rotation": [-9.25, -90, 0],
-      "translation": [0, 6, 8.25],
-      "scale": [1.5, 1.5, 1]
-    },
-    "thirdperson_lefthand": {
-      "rotation": [-9.25, 90, 0],
-      "translation": [0, 6, 8.25],
-      "scale": [1.5, 1.5, 1]
-    },
-    "firstperson_righthand": {
-      "rotation": [-90, -64.25, -65],
-      "translation": [-1.37, 7.45, 1.13],
-      "scale": [1.5, 1.5, 1]
-    },
-    "firstperson_lefthand": {
-      "rotation": [90, 64.25, -120],
-      "translation": [-1.37, 7.45, 1.13],
-      "scale": [1.5, 1.5, 1]
-    },
-    "ground": {
-      "translation": [0, 4.5, 0],
-      "scale": [1.5, 1.5, 1]
-    },
-    "gui": {
-      "translation": [2.25, 2.5, 0],
-      "scale": [1.5, 1.5, 1]
-    },
-    "head": {
-      "rotation": [-55, -56.5, 20],
-      "translation": [5.75, 5.5, 12.25],
-      "scale": [3, 3, 1]
-    },
-    "fixed": {
-      "translation": [3.75, 0, 0],
-      "scale": [1.5, 1.5, 1]
-    }
-  }
+	"format_version": "1.21.1",
+	"credit": "Made with Blockbench",
+	"parent": "mildlyusefuladditions:item/wooden_spear",
+	"textures": {
+
+		"layer0": "mildlyusefuladditions:item/iron_spear"
+
+	},
+	"overrides": [
+		{"predicate": {"throwing": 1}, "model": "mildlyusefuladditions:item/iron_spear_throwing"}
+	]
 }

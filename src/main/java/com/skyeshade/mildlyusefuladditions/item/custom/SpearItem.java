@@ -1,29 +1,137 @@
 package com.skyeshade.mildlyusefuladditions.item.custom;
 
+import com.skyeshade.mildlyusefuladditions.entity.ThrownSpear;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.common.ItemAbilities;
+import net.neoforged.neoforge.common.ItemAbility;
+public class SpearItem extends TieredItem implements ProjectileItem {
+    public static final int THROW_THRESHOLD_TICKS = 10;
+    public static final float THROW_POWER = 2.5F;
 
-public class SpearItem extends SwordItem {
-    public SpearItem(Tier p_tier, Properties p_properties, Tool toolComponentData) {
-        super(p_tier, p_properties.component(DataComponents.TOOL, toolComponentData));
+    public SpearItem(Tier tier, Properties props) {
+        super(tier, props
+                .stacksTo(1)
+                .durability(tier.getUses())
+                .component(DataComponents.ATTRIBUTE_MODIFIERS, createAttributes(tier, -2.9))
+        );
     }
 
-    public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> enchantment) {
-        if (enchantment.is(Enchantments.LOYALTY)) {
-            return true;
+
+    public static ItemAttributeModifiers createAttributes(Tier tier, double attackSpeed) {
+        double attackDamage = 4.0 + tier.getAttackDamageBonus();
+        return ItemAttributeModifiers.builder()
+                .add(Attributes.ATTACK_DAMAGE,
+                        new AttributeModifier(BASE_ATTACK_DAMAGE_ID, attackDamage, AttributeModifier.Operation.ADD_VALUE),
+                        EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_SPEED,
+                        new AttributeModifier(BASE_ATTACK_SPEED_ID, attackSpeed, AttributeModifier.Operation.ADD_VALUE),
+                        EquipmentSlotGroup.MAINHAND)
+                .build();
+    }
+
+    @Override public UseAnim getUseAnimation(ItemStack stack) { return UseAnim.SPEAR; }
+    @Override public int getUseDuration(ItemStack stack, LivingEntity entity) { return 72000; }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemStack stack = player.getItemInHand(hand);
+        if (isTooDamagedToUse(stack)) return InteractionResultHolder.fail(stack);
+        player.startUsingItem(hand);
+        return InteractionResultHolder.consume(stack);
+    }
+    public static ItemAttributeModifiers createAttributesExact(double attackDamage, double attackSpeed) {
+        return ItemAttributeModifiers.builder()
+                .add(Attributes.ATTACK_DAMAGE,
+                        new AttributeModifier(BASE_ATTACK_DAMAGE_ID, attackDamage, AttributeModifier.Operation.ADD_VALUE),
+                        EquipmentSlotGroup.MAINHAND)
+                .add(Attributes.ATTACK_SPEED,
+                        new AttributeModifier(BASE_ATTACK_SPEED_ID, attackSpeed, AttributeModifier.Operation.ADD_VALUE),
+                        EquipmentSlotGroup.MAINHAND)
+                .build();
+    }
+    @Override
+    public void releaseUsing(ItemStack stack, Level level, LivingEntity user, int timeLeft) {
+        if (!(user instanceof ServerPlayer player)) return;
+
+        int used = this.getUseDuration(stack, user) - timeLeft;
+        if (used < THROW_THRESHOLD_TICKS) return;
+
+        if (!level.isClientSide) {
+            ItemStack thrownCopy = stack.copyWithCount(1);
+
+
+            ThrownSpear proj = new ThrownSpear(
+                    level,
+                    player.getX(), player.getEyeY() - 0.15, player.getZ(),
+                    thrownCopy
+            );
+
+            proj.setOwner(player);
+            proj.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, THROW_POWER, 1.0F);
+            if (player.hasInfiniteMaterials()) proj.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
+
+            level.addFreshEntity(proj);
+
+            if (!player.hasInfiniteMaterials()) {
+                player.getInventory().removeItem(stack);
+            }
+            stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(user.getUsedItemHand()));
+
+            level.playSound(null, player.getX(), player.getY(), player.getZ(),
+                    SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F,
+                    1.0F / (level.getRandom().nextFloat() * 0.4F + 1.2F));
         }
-        return super.supportsEnchantment(stack, enchantment);
+
+        if (user instanceof Player p) p.awardStat(Stats.ITEM_USED.get(this));
     }
 
-    public static ItemAttributeModifiers createAttributes(Tier tier, int attackDamage, float attackSpeed) {
-        return createAttributes(tier, (float)attackDamage, attackSpeed);
+
+
+    private static boolean isTooDamagedToUse(ItemStack stack) {
+        return stack.getDamageValue() >= stack.getMaxDamage() - 1;
+    }
+
+
+    @Override
+    public Projectile asProjectile(Level level, net.minecraft.core.Position pos, ItemStack stack, Direction direction) {
+        ThrownSpear spear = new ThrownSpear(level, pos.x(), pos.y(), pos.z(), stack.copyWithCount(1));
+        spear.pickup = AbstractArrow.Pickup.ALLOWED;
+        return spear;
+    }
+
+    // enchant gates
+    @Override
+    public boolean supportsEnchantment(ItemStack stack, Holder<Enchantment> ench) {
+        if (ench.is(Enchantments.LOYALTY)) return true;
+        if (ench.is(Enchantments.RIPTIDE)) return false;
+        if (ench.is(Enchantments.FIRE_ASPECT)) return true;
+
+        return super.supportsEnchantment(stack, ench);
+    }
+
+    @Override
+    public boolean canPerformAction(ItemStack stack, ItemAbility ability) {
+        return ItemAbilities.DEFAULT_TRIDENT_ACTIONS.contains(ability);
     }
 }

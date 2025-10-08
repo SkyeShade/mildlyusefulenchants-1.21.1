@@ -1,6 +1,7 @@
 package com.skyeshade.mildlyusefuladditions;
 
 import com.skyeshade.mildlyusefuladditions.client.render.PrimedExplosiveRenderer;
+import com.skyeshade.mildlyusefuladditions.client.render.ThrownSpearRenderer;
 import com.skyeshade.mildlyusefuladditions.client.screen.StaffScreen;
 import com.skyeshade.mildlyusefuladditions.entity.ModEntities;
 import com.skyeshade.mildlyusefuladditions.item.ModItems;
@@ -10,6 +11,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.client.renderer.item.ItemPropertyFunction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -40,6 +42,7 @@ public class MildlyUsefulAdditionsClient {
     static void onClientSetup(FMLClientSetupEvent event) {
 
 
+        EntityRenderers.register(ModEntities.THROWN_SPEAR.get(), ThrownSpearRenderer::new);
 
         EntityRenderers.register(ModEntities.PRIMED_EXPLOSIVE.get(), PrimedExplosiveRenderer::new);
         registerItemProperties();
@@ -68,5 +71,15 @@ public class MildlyUsefulAdditionsClient {
                     }
                     return 0.0F;
                 });
+        ItemPropertyFunction THROWING = (stack, level, entity, seed) ->
+                (entity != null && entity.isUsingItem() && entity.getUseItem() == stack) ? 1.0F : 0.0F;
+
+
+        ItemProperties.register(ModItems.WOODEN_SPEAR.get(),   ResourceLocation.withDefaultNamespace("throwing"), THROWING);
+        ItemProperties.register(ModItems.STONE_SPEAR.get(),    ResourceLocation.withDefaultNamespace("throwing"), THROWING);
+        ItemProperties.register(ModItems.IRON_SPEAR.get(),     ResourceLocation.withDefaultNamespace("throwing"), THROWING);
+        ItemProperties.register(ModItems.GOLD_SPEAR.get(),     ResourceLocation.withDefaultNamespace("throwing"), THROWING);
+        ItemProperties.register(ModItems.DIAMOND_SPEAR.get(),  ResourceLocation.withDefaultNamespace("throwing"), THROWING);
+        ItemProperties.register(ModItems.NETHERITE_SPEAR.get(),ResourceLocation.withDefaultNamespace("throwing"), THROWING);
     }
 }

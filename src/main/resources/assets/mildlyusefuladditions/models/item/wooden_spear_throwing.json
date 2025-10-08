@@ -3,31 +3,27 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld",
 	"textures": {
-
 		"layer0": "mildlyusefuladditions:item/wooden_spear"
 	},
-	"overrides": [
-		{"predicate": {"throwing": 1}, "model": "mildlyusefuladditions:item/wooden_spear_throwing"}
-	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [0, -90, 45],
-			"translation": [0, 1.5, 1.75],
+			"rotation": [0, -90, -135],
+			"translation": [0, -4.25, 1.75],
 			"scale": [1.5, 1.5, 0.75]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [0, -90, -45],
-			"translation": [0, 1.5, 1.75],
+			"rotation": [0, -90, 135],
+			"translation": [0, -3.75, 1.75],
 			"scale": [1.5, 1.5, 0.75]
 		},
 		"firstperson_righthand": {
 			"rotation": [0, -90, 61],
-			"translation": [1.13, 3.2, 1.13],
+			"translation": [4.13, -2, -1],
 			"scale": [1.68, 1.68, 0.85]
 		},
 		"firstperson_lefthand": {
 			"rotation": [0, -90, -29],
-			"translation": [1.13, 3.2, 1.13],
+			"translation": [4.13, -2, -1],
 			"scale": [1.68, 1.68, 0.85]
 		},
 		"ground": {
@@ -40,7 +36,7 @@
 		},
 		"head": {
 			"rotation": [0, 0, -135],
-			"translation": [0, 9, 0],
+			"translation": [0, 10, 0],
 			"scale": [1.5, 1.5, 0.75]
 		},
 		"fixed": {

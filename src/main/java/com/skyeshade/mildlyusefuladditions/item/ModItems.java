@@ -3,10 +3,7 @@ package com.skyeshade.mildlyusefuladditions.item;
 import com.skyeshade.mildlyusefuladditions.MildlyUsefulAdditions;
 import com.skyeshade.mildlyusefuladditions.block.ImprovisedExplosive;
 import com.skyeshade.mildlyusefuladditions.block.ModBlocks;
-import com.skyeshade.mildlyusefuladditions.item.custom.HalberdItem;
-import com.skyeshade.mildlyusefuladditions.item.custom.LongBow;
-import com.skyeshade.mildlyusefuladditions.item.custom.PipeBomb;
-import com.skyeshade.mildlyusefuladditions.item.custom.Staff;
+import com.skyeshade.mildlyusefuladditions.item.custom.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.*;
@@ -20,6 +17,17 @@ import javax.tools.Tool;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(Registries.ITEM, MildlyUsefulAdditions.MODID);
+    private static DeferredHolder<Item, SpearItem> spearExact(
+            String id, Tier tier, double attackDamage, double attackSpeed, int durability
+    ) {
+        return ITEMS.register(id, () -> new SpearItem(
+                tier,
+                new Item.Properties()
+                        .stacksTo(1)
+                        .durability(durability)
+                        .attributes(SpearItem.createAttributesExact(attackDamage, attackSpeed))
+        ));
+    }
 
     public static final DeferredHolder<Item, BowItem> LONG_BOW = ITEMS.register("long_bow",
             () -> new LongBow(new Item.Properties().durability(541)));
@@ -50,25 +58,24 @@ public class ModItems {
             () -> new AxeItem(Tiers.NETHERITE,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.NETHERITE, 13.0F, -3.6F)))
     );
 
-    public static final DeferredHolder<Item, SwordItem> WOODEN_SPEAR = ITEMS.register("wooden_spear",
-            () -> new SwordItem(Tiers.WOOD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.WOOD, 2.0F, -2.0F)))
+    public static final DeferredHolder<Item, SpearItem> WOODEN_SPEAR = spearExact(
+            "wooden_spear", Tiers.WOOD, 2.0, -2.0, Tiers.WOOD.getUses()
     );
-    public static final DeferredHolder<Item, SwordItem> STONE_SPEAR = ITEMS.register("stone_spear",
-            () -> new SwordItem(Tiers.STONE,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.STONE, 3.0F, -2.6F)))
+    public static final DeferredHolder<Item, SpearItem> STONE_SPEAR = spearExact(
+            "stone_spear", Tiers.STONE, 3.0, -2.6, Tiers.STONE.getUses()
     );
-    public static final DeferredHolder<Item, SwordItem> IRON_SPEAR = ITEMS.register("iron_spear",
-            () -> new SwordItem(Tiers.IRON,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.IRON, 4.0F, -2.6F)))
+    public static final DeferredHolder<Item, SpearItem> IRON_SPEAR = spearExact(
+            "iron_spear", Tiers.IRON, 4.0, -2.6, Tiers.IRON.getUses()
     );
-    public static final DeferredHolder<Item, SwordItem> GOLD_SPEAR = ITEMS.register("golden_spear",
-            () -> new SwordItem(Tiers.GOLD,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.GOLD, 3.0F, -1.3F)))
+    public static final DeferredHolder<Item, SpearItem> GOLD_SPEAR = spearExact(
+            "golden_spear", Tiers.GOLD, 3.0, -1.3, Tiers.GOLD.getUses()
     );
-    public static final DeferredHolder<Item, SwordItem> DIAMOND_SPEAR = ITEMS.register("diamond_spear",
-            () -> new SwordItem(Tiers.DIAMOND,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.DIAMOND, 5.0F, -2.6F)))
+    public static final DeferredHolder<Item, SpearItem> DIAMOND_SPEAR = spearExact(
+            "diamond_spear", Tiers.DIAMOND, 5.0, -2.6, Tiers.DIAMOND.getUses()
     );
-    public static final DeferredHolder<Item, SwordItem> NETHERITE_SPEAR = ITEMS.register("netherite_spear",
-            () -> new SwordItem(Tiers.NETHERITE,new Item.Properties().attributes(AxeItem.createAttributes(Tiers.NETHERITE, 6.0F, -2.6F)))
+    public static final DeferredHolder<Item, SpearItem> NETHERITE_SPEAR = spearExact(
+            "netherite_spear", Tiers.NETHERITE, 6.0, -2.6, Tiers.NETHERITE.getUses()
     );
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -64,12 +64,12 @@ public class Staff extends Item {
             }
 
             if (totalFired > 0) {
+                int dmg = Math.max(1, totalFired);
                 if (!player.isCreative()) {
-                    self.hurtAndBreak(1, player,
-                            hand == InteractionHand.MAIN_HAND
-                                    ? net.minecraft.world.entity.EquipmentSlot.MAINHAND
-                                    : net.minecraft.world.entity.EquipmentSlot.OFFHAND);
+                    self.hurtAndBreak(dmg, player,
+                            hand == InteractionHand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
                 }
+
                 player.getCooldowns().addCooldown(this, 10);
             }
         }
